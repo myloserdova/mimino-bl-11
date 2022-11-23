@@ -1,1 +1,68 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+:root {
+  --main-white: #ffffff;
+  --second-white: #e5e5e5;
+  --yellow: #f3c653;
+}
+
+@font-face {
+  font-family: 'Mimino';
+  src: url('../fonts/FilmP3Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Times';
+  src: url('../fonts/times-new-roman.ttf');
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--black-color-text);
+
+  font-weight: 400;
+
+  font-family: 'Montserrat', sans-serif;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 320px;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    width: 1360px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
