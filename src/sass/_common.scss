@@ -3,7 +3,12 @@
 :root {
   --main-white: #ffffff;
   --second-white: #e5e5e5;
-  --yellow: #f3c653;
+  --yellow: hsl(43, 87%, 64%);
+  --text-color: #B4B4B4;
+  --section-title-color: #494848;
+  --text-secondary-color: #5F5F5F;
+  --text-secondary-brown: #C79002;
+  --backgroung-section: #FFFDEE;
 }
 
 @font-face {
@@ -23,7 +28,7 @@ body {
   font-weight: 400;
 
   font-family: 'Montserrat', sans-serif;
-}
+ }
 
 body.modal-open {
   overflow: hidden;
@@ -42,14 +47,18 @@ ul {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 320px;
+  width: 100%;
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
+  @media screen and (min-width: 414px) {
+    width: 414px;
   }
 
-  @media screen and (min-width: 1360px) {
-    width: 1360px;
+  @media screen and (min-width: 1024px) {
+    width: 1024px;
+  }
+
+  @media screen and (min-width:  1280px) {
+    width:  1280px;
   }
 }
 
@@ -66,3 +75,66 @@ ul {
   margin-block-start: 0;
   margin-block-end: 0;
 }
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  }
+
+   .text_main {
+    font-family: 'Times';
+  font-weight: 400;
+font-size: 20px;
+line-height: calc(23/20);
+color: var(--text-color);
+padding-top: 16px;
+margin-bottom: 12px;
+  }
+
+  .section-title {
+    font-family: Mimino;
+font-weight: 700;
+font-size: 40px;
+line-height: calc(43 / 40);
+letter-spacing: 0.3em;
+text-transform: uppercase;
+color: var(--section-title-color);
+margin-bottom: 12px;
+}
+
+ .text_secondary {
+  font-weight: 600;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  line-height: calc(15/12);
+  letter-spacing: 0.02em;
+  color: var(--text-secondary-color);
+  max-width: 258px;
+  height: 76px;
+  margin-bottom: 28px;
+ }
+
+ .text_secondary-color {
+  font-weight: 600;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  line-height: calc(15/12);
+  letter-spacing: 0.02em;
+  color: var(--text-secondary-brown);
+  max-width: 163px;
+  height: 120px;
+ }
