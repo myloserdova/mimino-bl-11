@@ -8,17 +8,69 @@
       Velit officia consequat duis enim velit mollit. Exercitation veniam
       consequat sunt nostrud amet.
     </p>
-    <img
-      class="img rest-home__img"
-      src="./images/rest-interior-mob1.jpg"
-      alt="Загальне фото інтер'єру ресторану"
+    <picture>
+      <source
+        srcset="
+          ./images/rest-interior-mob1.jpg    1x,
+          ./images/rest-interior-mob1@2x.jpg 2x
+        "
+        type="image/jpeg"
+        media="(max-width: 1023px)"
+      />
+      <source
+        srcset="
+          ./images/rest-interior-tab1.jpg    1x,
+          ./images/rest-interior-tab1@2x.jpg 2x
+        "
+        type="image/jpeg"
+        media="(max-width: 1279px)"
+      />
+      <source
+      srcset="
+        ./images/rest-interior-desk1.jpg    1x,
+        ./images/rest-interior-desk1@2x.jpg 2x
+      "
+      type="image/jpeg"
+      media="(min-width: 1280px)"
     />
+      <img
+        class="img rest-home__img"
+        src="./images/rest-interior-mob1.jpg"
+        alt="Загальне фото інтер'єру ресторану"
+      />
+    </picture>
     <div class="restor-home__flex">
+      <picture>
+        <source
+          srcset="
+            ./images/rest-interior-mob2.jpg    1x,
+            ./images/rest-interior-mob2@2x.jpg 2x
+          "
+          type="image/jpeg"
+          media="(max-width: 1023px)"
+        />
+        <source
+          srcset="
+            ./images/rest-interior-tab2.jpg    1x,
+            ./images/rest-interior-tab2@2x.jpg 2x
+          "
+          type="image/jpeg"
+          media="(max-width: 1279px)"
+        />
+        <source
+        srcset="
+          ./images/rest-interior-desk2.jpg    1x,
+          ./images/rest-interior-desk2@2x.jpg 2x
+        "
+        type="image/jpeg"
+        media="(min-width: 1280px)"
+      />
       <img
         class="img"
         src="./images/rest-interior-mob2.jpg"
         alt="Інтер'єр ресторану. Зал з колонами, столи, стільці"
       />
+    </picture>
       <p class="text_secondary-color">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. Exercitation
@@ -27,22 +79,77 @@
     </div>
 
     <ul class="slick__list one-time">
-        <li class="slick__item">
-          <div class="slick__box"><img
+      <li class="slick__item">
+        <div class="slick__box">
+          <picture>
+            <source
+              srcset="
+                ./images/rest-table-mob1.jpg    1x,
+                ./images/rest-table-mob1@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(max-width: 1023px)"
+            />
+            <source
+              srcset="
+                ./images/rest-table-tab1.jpg    1x,
+                ./images/rest-table-tab1@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(max-width: 1279px)"
+            />
+            <source
+            srcset="
+              ./images/rest-table-desk1.jpg    1x,
+              ./images/rest-table-desk1@2x.jpg 2x
+            "
+            type="image/jpeg"
+            media="(min-width: 1280px)"
+          />
+          <img
             class="img"
             src="./images/rest-table-mob1.jpg"
             alt="Жіноча рука тримає бокал з червоним вином"
-          /></div>
-        </li>
-        <li class="slick__item">
-          <div class="slick__box"><img
+          />
+        </picture>
+        </div>
+      </li>
+      <li class="slick__item">
+        <div class="slick__box">
+          <picture>
+            <source
+              srcset="
+                ./images/rest-table-mob2.jpg    1x,
+                ./images/rest-table-mob2@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(max-width: 1023px)"
+            />
+            <source
+              srcset="
+                ./images/rest-table-tab2.jpg    1x,
+                ./images/rest-table-tab2@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(max-width: 1279px)"
+            />
+            <source
+            srcset="
+              ./images/rest-table-desk2.jpg    1x,
+              ./images/rest-table-desk2@2x.jpg 2x
+            "
+            type="image/jpeg"
+            media="(min-width: 1280px)"
+          />
+          <img
             class="img"
             src="./images/rest-table-mob2.jpg"
             alt="Сервірований стіл, тарілки, прибори, бокали, букети"
-          /></div>
-        </li>
+          />
+        </picture>
+        </div>
+      </li>
     </ul>
-    
 
     <svg width="32" height="32">
       <use href="./images/symbol-defs.svg#icon-cil_arrow-left"></use>
