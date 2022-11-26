@@ -1,0 +1,58 @@
+.hotel-rooms {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: #fffdee;
+}
+.container--rooms {
+margin-left: 0;
+width: auto;
+}
+.brend-text {
+    font-family: "Times New Roman";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    color: #b4b4b4;
+}
+
+.brend-logo {
+    text-decoration: none;
+    margin-top: 8px;
+    font-family: Mimino;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: calc(43 / 40);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #494848;
+}
+
+.room-type {
+    margin-top: 32px;
+    font-family: "Times New Roman";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.room-type__count {
+    text-transform: uppercase;
+}
+
+.room-type__description {
+    margin-top: 12px;
+    width: 258px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    letter-spacing: 0.02em;
+    color: #5f5f5f;
+}
+.room-type__photo {
+margin-top: 32px;
+padding-left: 140px;
+}
