@@ -6,8 +6,11 @@
 .container--rooms {
 margin-left: 0;
 width: auto;
+padding-left: 0;
+padding-right: 0;
 }
 .brend-text {
+    padding-left: 15px;
     font-family: "Times New Roman";
     font-style: normal;
     font-weight: 400;
@@ -17,6 +20,7 @@ width: auto;
 }
 
 .brend-logo {
+    padding-left: 15px;
     text-decoration: none;
     margin-top: 8px;
     font-family: Mimino;
@@ -30,6 +34,7 @@ width: auto;
 
 .room-type {
     margin-top: 32px;
+    padding-left: 15px;
     font-family: "Times New Roman";
     font-weight: 700;
     font-size: 24px;
@@ -44,6 +49,7 @@ width: auto;
 
 .room-type__description {
     margin-top: 12px;
+    padding-left: 15px;
     width: 258px;
     font-family: "Montserrat";
     font-weight: 600;
@@ -54,5 +60,16 @@ width: auto;
 }
 .room-type__photo {
 margin-top: 32px;
-padding-left: 140px;
+padding-left: 155px;
+}
+.room-gallery {
+display: flex;
+gap: 16px;
+margin-top: 32px;
+}
+.gallery-buttons {
+display: flex;
+margin-top: 28px;
+gap: 34px;
+padding-left: 16px;
 }
