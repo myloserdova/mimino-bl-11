@@ -22,5 +22,8 @@
 <symbol id="icon-cil_arrow-left" viewBox="0 0 32 32">
 <path d="M31.083 15h-26.078l6-6-1.414-1.414-8.414 8.414 8.414 8.414 1.414-1.414-6-6h26.078v-2z"></path>
 </symbol>
+<symbol id="icon-cil_arrow-right-room" viewBox="0 0 32 32">
+    <path d="M22.492 7.586 21.078 9l6 6H1v2h26.077l-6 6 1.414 1.414L30.905 16l-8.414-8.414z"/>
+</symbol>
 </defs>
 </svg>
