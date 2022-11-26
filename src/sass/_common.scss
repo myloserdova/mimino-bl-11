@@ -4,11 +4,14 @@
   --main-white: #ffffff;
   --second-white: #e5e5e5;
   --yellow: hsl(43, 87%, 64%);
-  --text-color: #B4B4B4;
+  --text-color: #b4b4b4;
   --section-title-color: #494848;
-  --text-secondary-color: #5F5F5F;
-  --text-secondary-brown: #C79002;
-  --backgroung-section: #FFFDEE;
+  --text-secondary-color: #5f5f5f;
+  --text-secondary-brown: #c79002;
+  --backgroung-section: #fffdee;
+  --black-color-room: #000000;
+  --text-room: #7a7a7a;
+  --border-button-room: #f3c653;
 }
 
 @font-face {
@@ -28,7 +31,7 @@ body {
   font-weight: 400;
 
   font-family: 'Montserrat', sans-serif;
- }
+}
 
 body.modal-open {
   overflow: hidden;
@@ -57,8 +60,8 @@ ul {
     width: 1024px;
   }
 
-  @media screen and (min-width:  1280px) {
-    width:  1280px;
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
   }
 }
 
@@ -93,48 +96,48 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  }
-
-   .text_main {
-    font-family: 'Times';
-  font-weight: 400;
-font-size: 20px;
-line-height: calc(23/20);
-color: var(--text-color);
-padding-top: 16px;
-margin-bottom: 12px;
-  }
-
-  .section-title {
-    font-family: Mimino;
-font-weight: 700;
-font-size: 40px;
-line-height: calc(43 / 40);
-letter-spacing: 0.3em;
-text-transform: uppercase;
-color: var(--section-title-color);
-margin-bottom: 12px;
 }
 
- .text_secondary {
+.text_main {
+  font-family: 'Times';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  color: var(--text-color);
+  padding-top: 16px;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-family: Mimino;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: calc(43 / 40);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--section-title-color);
+  margin-bottom: 12px;
+}
+
+.text_secondary {
   font-weight: 600;
   font-family: 'Montserrat';
   font-size: 12px;
-  line-height: calc(15/12);
+  line-height: calc(15 / 12);
   letter-spacing: 0.02em;
   color: var(--text-secondary-color);
   max-width: 258px;
   height: 76px;
   margin-bottom: 28px;
- }
+}
 
- .text_secondary-color {
+.text_secondary-color {
   font-weight: 600;
   font-family: 'Montserrat';
   font-size: 12px;
-  line-height: calc(15/12);
+  line-height: calc(15 / 12);
   letter-spacing: 0.02em;
   color: var(--text-secondary-brown);
   max-width: 163px;
   height: 120px;
- }
+}
