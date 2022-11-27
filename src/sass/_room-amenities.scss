@@ -3,6 +3,8 @@
   padding-top: 32px;
   padding-bottom: 32px;
 
+  background: var(--backgroung-section);
+
   @media screen and (min-width: 1024px) {
     padding-top: 48px;
     padding-bottom: 40px;
@@ -10,6 +12,27 @@
 
   @media screen and (min-width: 1280px) {
     padding-bottom: 48px;
+  }
+
+  &__container {
+    @media screen and (min-width: 1024px) {
+      padding: 0 47px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding: 0 85px;
+    }
+  }
+
+  &__container-text {
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      gap: 80px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      gap: 159px;
+    }
   }
 
   &__title {
@@ -33,6 +56,7 @@
 
   &__text {
     margin-bottom: 16px;
+    max-width: 400px;
 
     font-weight: 700;
     font-size: 16px;
@@ -43,30 +67,84 @@
     &--bottom {
       margin-bottom: 32px;
     }
+
+    &--wide {
+      max-width: 757px;
+    }
   }
 
   &__button-book {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 20px;
+    padding: 20px 42px;
+    width: 100%;
 
     font-weight: 500;
-    font-size: 20px;
-    line-height: calc(24 / 20);
+    font-size: 12px;
+    line-height: calc(24 / 12);
     text-transform: uppercase;
     color: var(--main-white);
     background-color: var(--black-color-room);
     border: 1px solid var(--border-button-room);
     border-radius: 25px;
+
+    @media screen and (min-width: 414px) {
+      max-width: 384px;
+      min-height: 64px;
+
+      font-size: 20px;
+      line-height: calc(24 / 20);
+    }
+
+    @media screen and (min-width: 1024px) {
+      max-width: 434px;
+      padding: 18px 36px;
+
+      font-size: 24px;
+      line-height: calc(29 / 24);
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-right: 113px;
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--black-color-room);
+      background: var(--border-button-room);
+      border: 1px solid var(--border-button-room);
+    }
+  }
+
+  &__button-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
   }
 
   &__button-back {
+    display: flex;
+
     font-weight: 500;
-    font-size: 16px;
-    line-height: calc(20 / 16);
+    font-size: 12px;
+    line-height: calc(20 / 12);
     letter-spacing: 0.02em;
     color: var(--text-secondary-brown);
+
+    @media screen and (min-width: 414px) {
+      font-size: 16px;
+      line-height: calc(20 / 16);
+    }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 20px;
+      line-height: calc(24 / 20);
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-right: 113px;
+    }
 
     &:hover,
     &:focus {
@@ -75,6 +153,8 @@
   }
 
   &__icon {
+    margin-left: 12px;
+
     fill: currentColor;
   }
 }
