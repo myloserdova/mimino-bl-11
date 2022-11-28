@@ -1,4 +1,4 @@
-.hotel-rooms {
+.bcg-rooms {
     padding-top: 32px;
     padding-bottom: 32px;
     background-color: #fffdee;
@@ -64,6 +64,7 @@ padding-left: 155px;
 }
 .room-gallery {
 display: flex;
+position: relative;
 gap: 16px;
 margin-top: 32px;
 }
@@ -72,4 +73,84 @@ display: flex;
 margin-top: 28px;
 gap: 34px;
 padding-left: 16px;
+}
+.button-about {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-left: auto;
+margin-right: auto;
+margin-top: 28px;
+width: 236px;
+height: 48px;
+font-family: 'Montserrat';
+font-weight: 700;
+font-size: 16px;
+line-height: calc(20 / 16);
+letter-spacing: 0.02em;
+border-radius: 25px;
+border: 2px solid #FFFDEE;
+background-color: #000000;
+color: #F3C653;
+
+&:hover, &:focus {
+background-color: #fff;
+border: 2px solid #F3C653;
+}
+}
+.button-prices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    width: 236px;
+    height: 48px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.02em;
+    border-radius: 25px;
+    border: 2px solid #FFFDEE;
+    background-color: #000000;
+    color: #F3C653;
+    &:hover,
+        &:focus {
+            background-color: #fff;
+            border: 2px solid #F3C653;
+        }
+}
+.section-reverse {
+padding-top: 32px;
+background-color: #F0ECD6;
+padding-bottom: 32px;
+}
+.brend-text--reverse {
+    display: block;
+    text-align: end;
+    padding-right: 15px;
+}
+.brend-logo--reverse {
+    display: block;
+    text-align: end;
+    padding-left: 0;
+    padding-right: 3px;
+}
+.room-type--reverse {
+ text-align: end;
+ display: block;
+ padding-right: 15px;
+}
+.text-box {
+display: flex;
+width: 100%;
+justify-content: center;
+}
+.room-type__photo--reverse {
+padding-left: 15px;
+}
+.room-gallery--reverse {
+justify-content: end;
 }
