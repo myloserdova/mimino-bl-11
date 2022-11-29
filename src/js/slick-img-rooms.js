@@ -6,4 +6,5 @@ $('.room-gallery').slick({
   speed: 300,
   slidesToShow: 2,
   adaptiveHeight: true,
+  variableWidth: true
 });

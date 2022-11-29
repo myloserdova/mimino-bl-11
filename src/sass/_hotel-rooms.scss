@@ -104,11 +104,17 @@ left: 512px;
 }
 .room-gallery {
 display: flex;
-gap: 16px;
 margin-top: 32px;
 @media screen and (min-width: 1024px) {
-margin-top: 176px; 
+margin-top: 176px;
+min-width: 404px;
 }
+&:first-child {
+margin-left: 0px;
+}
+}
+.slick-item {
+margin-left: 16px;
 }
 .gallery-buttons {
 display: flex;
