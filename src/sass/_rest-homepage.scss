@@ -1,0 +1,62 @@
+
+.rest-home {
+  background-color: var(--backgroung-section);
+}
+
+.rest-home__img {
+margin-bottom: 28px; 
+margin-right: 0;
+margin-left: auto;
+ 
+}
+
+.restor-home__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.slick {
+  padding-bottom: 70px;
+}
+
+.slick__list {
+ width: 100%;
+display: flex;
+ gap: 20px;
+}
+
+.slick__box {
+display: flex;
+align-items: center;
+justify-content: center;
+
+margin: 0 auto;
+}
+
+.my-slick-prev,
+.my-slick-next {
+position: absolute;
+bottom: -50px;
+display: flex;
+align-items: center;
+justify-content: right;
+padding: 0;
+width: 50px;
+height: 40px;
+cursor: pointer;
+border: none;
+background-color: transparent;
+font-size: 25px;
+font-weight: 900;
+color: #000000;
+}
+
+.my-slick-prev {
+left: 260px;
+}
+
+.my-slick-next {
+right: 5px;
+}

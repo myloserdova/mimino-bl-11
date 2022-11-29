@@ -22,7 +22,11 @@
   max-width: 1280px;
   margin: 0 auto;
 
-  @media screen and (min-width: 100px) and (max-width: 1024px) {
+  @media screen and (max-width: 413px) {
+    width: auto;
+  }
+
+  @media screen and (min-width: 414px) and (max-width: 1023px) {
     width: 414px;
   }
 
@@ -60,7 +64,11 @@
   max-width: 1280px;
   margin: 0 auto;
 
-  @media screen and (min-width: 100px) and (max-width: 1024px) {
+  @media screen and (max-width: 413px) {
+    width: auto;
+  }
+
+  @media screen and (min-width: 414px) and (max-width: 1023px) {
     width: 414px;
   }
 
@@ -98,7 +106,11 @@
   max-width: 1280px;
   margin: 0 auto;
 
-  @media screen and (min-width: 100px) and (max-width: 1024px) {
+  @media screen and (max-width: 413px) {
+    width: auto;
+  }
+
+  @media screen and (min-width: 414px) and (max-width: 1023px) {
     width: 414px;
   }
 
@@ -118,7 +130,11 @@
   text-align: center;
   margin: 0 auto;
 
-  @media screen and (min-width: 100px) and (max-width: 1024px) {
+  @media screen and (max-width: 413px) {
+    width: auto;
+  }
+
+  @media screen and (min-width: 414px) and (max-width: 1023px) {
     width: 414px;
   }
 
@@ -338,7 +354,18 @@
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--main-white);
-  margin-right: 52px;
+
+  @media screen and (min-width: 392px) {
+    margin-right: 26px;
+  }
+
+  @media screen and (min-width: 405px) {
+    margin-right: 40px;
+  }
+
+  @media screen and (min-width: 414px) {
+    margin-right: 52px;
+  }
 
   @media screen and (min-width: 1024px) {
     font-size: 40px;
@@ -824,9 +851,13 @@
 }
 
 .slick__list-room {
-  width: 414px;
+  width: auto;
   margin: 0 auto;
   display: flex;
+
+  @media screen and (min-width: 414px) {
+    width: 414px;
+  }
 
   @media screen and (min-width: 1024px) {
     width: 1024px;
