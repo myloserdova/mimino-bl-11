@@ -18,25 +18,46 @@
             ./images/modern-studio-mb@2x.jpg 2x
           "
           type="image/jpeg"
-          media="(min-width: 414px)"
+          media="(max-width: 1023px)"
+        />
+        <source
+          srcset="
+            ./images/modern-studio-tb.jpg    1x,
+            ./images/modern-studio-tb@2x.jpg 2x
+          "
+          type="image/jpeg"
+          media="(max-width: 1279px)"
         />
         <img
           src="./images/modern-studio-apartment-design-with-bedroom-living-space 1.jpg"
           alt="bedroom"
         />
       </picture>
-      <div class="room-gallery">
-        <div>
-          <picture>
-            <source
-              srcset="./images/bath-hotel.jpg 1x, ./images/bath-hotel@2x.jpg 2x"
-              type="image/jpeg"
-              media="(min-width: 414px)"
-            />
-            <img src="./images/bath-hotel.jpg" alt="ванна кімната" />
-          </picture>
-        </div>
-        <div>
+      <ul class="room-gallery">
+        <li class="slick-item">
+          <div class="slick-box">
+            <picture>
+              <source
+                srcset="
+                  ./images/bath-hotel.jpg    1x,
+                  ./images/bath-hotel@2x.jpg 2x
+                "
+                type="image/jpeg"
+                media="(max-width: 1023px)"
+              />
+              <source
+                srcset="
+                  ./images/bath-hotel-tb.jpg    1x,
+                  ./images/bath-hotel-tb@2x.jpg 2x
+                "
+                type="image/jpeg"
+                media="(max-width: 1279px)"
+              />
+              <img src="./images/bath-hotel.jpg" alt="ванна кімната" />
+            </picture>
+          </div>
+        </li>
+        <li class="slick-item">
           <picture>
             <source
               srcset="./images/cup-tea.jpg 1x, ./images/cup-tea@2x.jpg 2x"
@@ -45,16 +66,38 @@
             />
             <img src="./images/cup-tea.jpg" alt="чашка кави" />
           </picture>
-        </div>
-      </div>
-      <div class="gallery-buttons">
+        </li>
+        <li class="slick-item">
+          <picture>
+            <source
+              srcset="./images/cup-tea.jpg 1x, ./images/cup-tea@2x.jpg 2x"
+              type="image/jpeg"
+              media="(min-width: 414px)"
+            />
+            <img src="./images/cup-tea.jpg" alt="чашка кави" />
+          </picture>
+        </li>
+        <li class="slick-item">
+          <picture>
+            <source
+              srcset="./images/cup-tea.jpg 1x, ./images/cup-tea@2x.jpg 2x"
+              type="image/jpeg"
+              media="(min-width: 414px)"
+            />
+            <img src="./images/cup-tea.jpg" alt="чашка кави" />
+          </picture>
+        </li>
+      </ul>
+      <button class="my-slick-prev">
         <svg width="32" height="32">
           <use href="./images/symbol-defs.svg#icon-cil_arrow-left"></use>
         </svg>
+      </button>
+      <button class="my-slick-next">
         <svg width="32" height="32">
           <use href="./images/symbol-defs.svg#icon-cil_arrow-right"></use>
         </svg>
-      </div>
+      </button>
       <button class="button-about" type="button">Детальніше</button>
       <button class="button-prices" type="button">Переглянути ціни</button>
     </div>
@@ -71,7 +114,7 @@
           veniam consequat sunt nostrud amet.
         </p>
       </div>
-      <picture class="room-type__photo room-type__photo--reverse">
+      <!-- <picture class="room-type__photo room-type__photo--reverse">
         <source
           srcset="
             ./images/modern-studio-mb.jpg    1x,
@@ -84,7 +127,7 @@
           src="./images/modern-studio-apartment-design-with-bedroom-living-space 1.jpg"
           alt="bedroom"
         />
-      </picture>
+      </picture> -->
       <div class="room-gallery room-gallery--reverse">
         <div>
           <picture>
@@ -127,7 +170,7 @@
         sint. Velit officia consequat duis enim velit mollit. Exercitation
         veniam consequat sunt nostrud amet.
       </p>
-      <picture class="room-type__photo">
+      <!-- <picture class="room-type__photo">
         <source
           srcset="
             ./images/modern-studio-mb.jpg    1x,
@@ -140,7 +183,7 @@
           src="./images/modern-studio-apartment-design-with-bedroom-living-space 1.jpg"
           alt="bedroom"
         />
-      </picture>
+      </picture> -->
       <div class="room-gallery">
         <div>
           <picture>
