@@ -1,2 +1,0 @@
-$(".room-time").slick({prevArrow:'<button type="button" class="my-slick-prev-room"></button>',nextArrow:'<button type="button" class="my-slick-next-room"></button>',infinite:!0,speed:300,slidesToShow:1,adaptiveHeight:!0}),$(".room-gallery").slick({prevArrow:'<button type="button" class="my-slick-prev">&xlarr;</button>',nextArrow:'<button type="button" class="my-slick-next">&xrarr;</button>',infinite:!0,speed:300,slidesToShow:2,adaptiveHeight:!0});
-//# sourceMappingURL=hotel.4de47398.js.map
