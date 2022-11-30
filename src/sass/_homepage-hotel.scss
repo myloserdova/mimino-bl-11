@@ -1,0 +1,43 @@
+.homepage-hotel {
+  background-image: linear-gradient(0deg, #000000a7, #000000a7),
+    url(../images/homepage-hotel/homepage-hotel_test_background-image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 735px;
+  padding: 24px 0;
+
+  &__logo {
+    font-family: Mimino;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: calc(43 / 40);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    color: var(--main-white);
+  }
+
+  &__title-wrap {
+    width: 127px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    color: var(--main-white);
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    letter-spacing: 0.02em;
+    text-align: end;
+  }
+  &__text {
+    margin-left: 32px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    letter-spacing: 0.02em;
+    color: #b4b4b4;
+    width: 243px;
+  }
+}
