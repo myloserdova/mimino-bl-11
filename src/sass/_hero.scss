@@ -392,6 +392,10 @@
 .hotel-list-nav {
   display: flex;
   align-items: center;
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 60px;
+  }
 }
 
 .hotel-list-nav--room {
@@ -418,13 +422,11 @@
   }
 
   @media screen and (min-width: 1280px) {
-    position: absolute;
-    top: 38px;
-    right: 85px;
+    display: none;
   }
 }
 
-.social-list-nav-room {
+.social-list-nav-header {
   display: none;
 
   @media screen and (min-width: 1280px) {
@@ -1044,4 +1046,17 @@
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.room-link {
+  display: flex;
+  justify-content: center;
+}
+
+.room-time-link {
+  padding: 30px;
+  margin: 10px;
+  border-radius: 50%;
+  color: #000;
+  background-color: aqua;
 }
