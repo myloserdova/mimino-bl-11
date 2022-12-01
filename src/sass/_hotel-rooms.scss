@@ -1,14 +1,17 @@
+.hotel-rooms {
+position: relative;
+}
 .bcg-rooms {
     padding-top: 32px;
     padding-bottom: 32px;
     background-color: #fffdee;
     width: 100%;
     @media screen and (min-width: 1024px) {
-        position: relative;
             padding-left: 47px;
             padding-right: 47px;
             padding-top: 62px;
-            padding-bottom: 62px;
+            padding-bottom: 104px;
+            position: relative;
         }
 }
 .container--rooms {
@@ -16,6 +19,14 @@ margin-left: 0;
 width: auto;
 padding-left: 0;
 padding-right: 0;
+@media screen and (min-width: 414px) and (max-width: 1023px) {
+width: 414px;
+margin: 0 auto;    
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+width: 1024px;
+margin: 0 auto;    
+}
 }
 .brend-text {
     padding-left: 15px;
@@ -83,7 +94,7 @@ padding-right: 0;
     letter-spacing: 0.02em;
     color: #5f5f5f;
     @media screen and (min-width: 1024px) {
-    width: 439px;
+    width: 400px;
     padding-left: 0;
     font-size: 16px;
     line-height: calc(20 / 16);
@@ -98,8 +109,8 @@ padding-right: 15px;
 position: absolute;
 padding-right: 0;
 margin-top: 0px;
-bottom: 400px;
-left: 512px;    
+top: -32px;
+right: 112px;
 }
 }
 .room-gallery {
@@ -107,7 +118,7 @@ display: flex;
 margin-top: 32px;
 @media screen and (min-width: 1024px) {
 margin-top: 176px;
-min-width: 404px;
+min-width: 428px;
 }
 &:first-child {
 margin-left: 0px;
@@ -115,12 +126,22 @@ margin-left: 0px;
 }
 .slick-item {
 margin-left: 16px;
+@media screen and (min-width: 1024px) {
+margin-left: 40px;    
 }
-.gallery-buttons {
-display: flex;
-margin-top: 28px;
-gap: 34px;
-padding-left: 16px;
+}
+.button-box-main {
+@media screen and (min-width: 1024px) {
+position: absolute;
+top: 581px;
+right: 47px;
+}
+}
+.button-box-reverse {
+@media screen and (min-width: 1024px) {
+position: absolute;
+top: 581px;    
+}
 }
 .button-about {
 display: flex;
@@ -140,6 +161,9 @@ border-radius: 25px;
 border: 2px solid #FFFDEE;
 background-color: #000000;
 color: #F3C653;
+@media screen and (min-width: 1024px) {
+margin-top: 0;    
+}
 
 &:hover, &:focus {
 background-color: #fff;
@@ -171,53 +195,98 @@ border: 2px solid #F3C653;
         }
 }
 .section-reverse {
+position: relative;
 padding-top: 32px;
 background-color: #F0ECD6;
 padding-bottom: 32px;
 width: 100%;
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
         padding-left: 47px;
-        padding-right: 47px;
+            padding-right: 47px;
+            padding-top: 66px;
+            padding-bottom: 104px;
     }
 }
 .brend-text--reverse {
     display: block;
     text-align: end;
     padding-right: 15px;
+    @media screen and (min-width: 1024px) {
+    padding-right: 17px;    
+    }
 }
 .brend-logo--reverse {
     display: block;
     text-align: end;
     padding-left: 0;
     padding-right: 3px;
+    @media screen and (min-width: 1024px) {
+    padding-right: 0;    
+    }
 }
 .room-type--reverse {
  text-align: end;
  display: block;
  padding-right: 15px;
+ @media screen and (min-width: 1024px) {
+ padding-right: 43px;   
+ }
 }
-.text-box {
+.room-type__box-reverse {
 display: flex;
-width: 100%;
-justify-content: center;
+padding-left: 98px;
+@media screen and (min-width: 1024px) {
+padding-left: 510px;    
+}
+}
+.room-type__description--reverse {
+padding-left: 0;
 }
 .room-type__photo--reverse {
 padding-left: 15px;
 padding-right: 0;
 justify-content: start;
+@media screen and (min-width: 1024px) {
+left: 112px;
+padding-left: 0;    
 }
-.room-gallery--reverse {
-justify-content: end;
 }
 // gallery rooms
 .room-gallery {
 width: 284px;
 }
-.my-slick-prev {
-left: 0;
-top: 200px;
+.room-gallery-reverse {
+display: flex;
+justify-content: end;
+width: 100%;
 }
-.my-slick-next {
-right: 0;
-top: 200px
+.my-slick-prev-hotel {
+position: absolute;
+width: 32px;
+height: 32px;
+left: 16px;
+top: 210px;
+background-image: url(../images/cil_arrow-left-hotel.svg);
+border: none;
+color: #0000;
+background-size: cover;
+background-color: #0000;
+@media screen and (min-width: 1024px) {
+left: 334px;    
+}
+}
+.my-slick-next-hotel {
+position: absolute;
+width: 32px;
+height: 32px;
+right: 164px;
+top: 210px;
+background-image: url(../images/cil_arrow-right-hotel.svg);
+border: none;
+color: #0000;
+background-size: cover;
+background-color: #0000;
+@media screen and (min-width: 1024px) {
+        right: 0;
+    }
 }
