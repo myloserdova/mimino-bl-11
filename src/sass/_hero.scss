@@ -725,6 +725,20 @@
   }
 }
 
+.hero__btn--first-hotel {
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    position: absolute;
+    bottom: 64px;
+    right: 319px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    bottom: 65px;
+    right: 377px;
+  }
+}
+
 .hero__btn--second {
   @media screen and (min-width: 1024px) and (max-width: 1279px) {
     position: absolute;
