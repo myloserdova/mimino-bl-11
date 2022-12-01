@@ -1033,35 +1033,6 @@
   }
 }
 
-.hero__btn--mobile-opacity {
-  display: none;
-
-  @media screen and (min-width: 1024px) {
-    display: block;
-  }
-}
-
-.hero__btn--mobile-visible-first {
-  display: none;
-
-  @media screen and (max-width: 1023px) {
-    margin-bottom: 24px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-.hero__btn--mobile-visible {
-  display: none;
-
-  @media screen and (max-width: 1023px) {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 .room-link {
   display: flex;
   justify-content: center;
