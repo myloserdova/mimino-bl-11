@@ -6,4 +6,14 @@ $('.one-time').slick({
   speed: 300,
   slidesToShow: 1.05,
   adaptiveHeight: true,
+  
 });
+
+//responsive: [
+ // {
+ //   breakpoint: 1024,
+ //   settings: {
+ //     slidesToShow: 2,
+ //      }
+       
+ // ]
