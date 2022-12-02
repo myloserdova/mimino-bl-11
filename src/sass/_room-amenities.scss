@@ -38,6 +38,7 @@
   &__title {
     margin-bottom: 16px;
 
+    font-family: 'Times';
     font-weight: 400;
     font-size: 32px;
     line-height: calc(37 / 32);
@@ -48,6 +49,8 @@
   &__subtitle {
     margin-bottom: 16px;
 
+    font-family: 'Times';
+    font-weight: 700;
     font-size: 24px;
     line-height: calc(28 / 24);
     text-transform: uppercase;
