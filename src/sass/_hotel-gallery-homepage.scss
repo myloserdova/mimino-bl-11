@@ -1,0 +1,87 @@
+
+.gallery {
+  border-top: 1px solid var(--black-color-room);
+  .gallery-bedroom-container {
+    display: flex;
+    flex-direction: row-reverse;
+    .gallery-bedroom {
+      margin-left: 64px;
+      padding-top: 120px;
+      .subtitle__logo {
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 37px;
+        color: var(--text-color);
+        margin-bottom: 4px;
+        text-align: end;
+        padding-right: 20px;
+      }
+      .logo__gallery {
+        font-family: 'Mimino';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 69px;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+        color: var(--gallery-logo-color);
+        margin-bottom: 24px;
+        text-align: end;
+      }
+      .gallery__description {
+        width: 501px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        color: var(--text-secondary-color);
+        padding-right: 20px;
+      }
+    }
+    .hotel-room {
+      position: relative;
+      top: -50px;
+      right: 25px;
+    }
+  }
+  .lobby-container {
+    .gallery-lobby {
+      position: relative;
+      top: -75px;
+      right: 0;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      z-index: 1;
+
+      .gallery__description-lobby {
+        color: var(--text-secondary-brown);
+        width: 311px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        margin-right: 45px;
+        padding-bottom: 60px;
+      }
+    }
+  }
+  .slider-container{
+    position: relative;
+    .slider{
+        position: absolute;
+        top: -230px;
+        left: -135px;
+        .img__items{
+            display: flex;
+            gap: 40px;
+        }
+    }
+  }
+}
