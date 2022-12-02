@@ -1,0 +1,277 @@
+
+
+.menu__container {
+    background-color: #F0ECD6;
+    padding: 32px 15px;
+    letter-spacing: 0.02em;
+
+    @media (min-width: 414px)  {
+        width: 414px;
+    }
+
+    ;
+
+    @media (min-width:1024px) {
+        width: 1024px;
+        display: flex;
+        flex-direction: column;
+        padding: 58px 48px 40px 47px;
+    }
+    ;
+
+    @media (min-width:1280px) {
+        width: 1280px;
+        padding: 58px 85px 60px 85px;
+    }
+
+}
+
+.menu__title {
+    font-family: Times New Roman;
+    font-size: 32px;
+    line-height: 1.156;
+    margin-bottom: 32px;
+
+    @media (min-width:1024px) {
+        margin-bottom: 40px;}
+
+}
+
+
+.menu__pages {
+    @media (min-width:1024px) {
+        display: flex;
+    }
+    ;
+}
+
+.menu__first {
+    @media (min-width:1024px) {
+        margin-right: 44px;
+    }
+
+    ;
+
+    @media (min-width:1280px) {
+        margin-right: 70px;
+    }
+}
+
+.menu__second {
+    @media (min-width:1024px) {
+        margin-left: 44px;
+    }
+
+    ;
+
+    @media (min-width:1280px) {
+        margin-left: 70px;
+    }
+}
+
+
+
+
+.menu__first .menu__table:last-child {
+    @media (min-width:1024px) {
+        margin-bottom: 0;
+    }
+   
+}
+
+.menu__second .table {
+    margin-bottom: 16px;
+
+    @media (min-width:1024px) {
+        margin-bottom: 22px;
+
+    }
+
+}
+
+.menu__caption {
+    font-family: 'Times New Roman';
+    
+    font-weight: 700;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 16px;
+
+    @media (min-width:1024px) {
+        margin-bottom: 20px;
+    }
+
+    ;
+
+    @media (min-width:1280px) {
+        font-size: 24px;
+        line-height: 1.167;
+    }
+}
+
+.menu__name {
+   
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.214;
+        @media (min-width:1280px) {
+            font-size: 16px;
+            line-height: 1.25;
+            
+        }
+}
+
+
+
+
+th {
+
+    text-align: left;
+
+    width: 50%;
+
+    @media (min-width:1024px) {
+        width: 54%;
+    }
+
+    ;
+
+    @media (min-width:1280px) {
+        width: 58%;
+    }
+
+
+
+}
+
+
+td {
+    text-align: right;
+    width: 25%;
+
+    width: 25%;
+
+
+    @media (min-width:1024px) {
+        width: 21%;
+    }
+
+    ;
+
+
+    @media (min-width:1280px) {
+        width: 25%;
+    }
+}
+
+
+.menu__ingredients {
+ 
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-top: 4px;
+}
+
+.menu__weight {
+    
+        font-size: 14px;
+   
+}
+
+.menu__table {
+    table-layout: fixed;
+    width: 100%;
+    border-spacing: 0 8px;
+}
+
+.menu__first .menu__table {
+    margin-bottom: 16px;
+
+    @media (min-width:1024px) {
+        margin-bottom: 20px;
+    }
+
+    ;
+
+}
+
+.menu__second .menu__table {
+    margin-bottom: 16px;
+
+    @media (min-width:1024px) {
+        margin-bottom: 20px;
+    }
+}
+
+.menu__bar .menu__table {
+    margin-bottom: 17px;
+
+    @media (min-width:1024px) {
+        margin-bottom: 23px;
+        border-spacing: 0 11px;
+
+    }
+
+    ;
+
+    @media (min-width:1280px) {
+        margin-bottom: 20px;
+    }
+}
+.menu__bar .menu__table:last-child {
+    margin-bottom: 0;
+}
+
+
+.menu__button {
+    display: flex;
+    font-family: Montserrat;
+    margin-top: 32px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+    border: 2px solid #F0ECD6;
+    border-radius: 25px;
+    width: 236px;
+    height: 49px;
+    color: #F3C653;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media (min-width:1024px) {
+        margin-right: 0;
+        margin-top: 40px;
+
+    }
+
+    ;
+    @media (min-width:1280px) {
+        margin-top: 31px;
+        
+    }
+
+}
+
+.menu__button:hover,
+.menu__button:focus {
+    background-color: #fff;
+
+    border-color: 2px solid #FFFFFF;
+}
+
+.menu__price {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.214px;
+
+
+}
