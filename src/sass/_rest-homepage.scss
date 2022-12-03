@@ -1,6 +1,7 @@
 .rest-home {
   position: relative;
   background-color: var(--backgroung-section);
+<<<<<<< Updated upstream
   margin: 0;
 }
   
@@ -16,6 +17,13 @@
 
 /*
 background-image: linear-gradient(
+=======
+  width: 100%;
+ }
+
+  /*.rest-home__line{
+  background-image: linear-gradient(
+>>>>>>> Stashed changes
     90deg, rgba(186, 186, 186, 0) 0% 33.5%,
     rgba(186, 186, 186, 0.4) 33.5% 33.8%, 
     rgba(186, 186, 186, 0) 33.8% 66.5%,
@@ -30,7 +38,16 @@ background-image: linear-gradient(
       rgba(186, 186, 186, 0) 50.6% 75.5%,
       rgba(186, 186, 186, 0.4) 75.5% 75.6%,
       rgba(186, 186, 186, 0) 75.6% 100%);
+<<<<<<< Updated upstream
     */
+=======
+  }
+
+  @media (min-width: 1280px) {
+    padding: 120px 85px 30px 85px;
+  }
+}*/
+>>>>>>> Stashed changes
 
 .rest-text {
   @media (min-width: 1024px) {
@@ -94,6 +111,7 @@ background-image: linear-gradient(
 
 .rest-slick {
   
+<<<<<<< Updated upstream
   @media (min-width: 1024px) {
     position: absolute;
     top: 927px;
@@ -105,10 +123,35 @@ background-image: linear-gradient(
   justify-content: center;
   margin-left: 69px;
    padding-bottom: 72px;
+=======
+  display: flex;
+   margin-left: 69px;
+   width: 100%;
+  
+   @media (min-width: 1024px) {
+    content: '';
+    position: absolute;
+    top: 748px;
+    left: 398px;
+    bottom: 96px;
+  }
 
+     }
+  
+>>>>>>> Stashed changes
+
+.rest-gallery {
+  width: 330px;
+     padding-bottom: 72px;
+  
+ 
   @media (min-width: 1024px) {
+<<<<<<< Updated upstream
     padding-bottom: 96px;
     margin-left: 471px;
+=======
+    
+>>>>>>> Stashed changes
   }
 
   @media (min-width: 1280px) {
@@ -118,6 +161,7 @@ background-image: linear-gradient(
 }
 
 .rest-slick__item {
+<<<<<<< Updated upstream
   margin-right: 19px;
   @media screen and (min-width: 1024px) {
     margin-left: 40px;    
@@ -141,7 +185,22 @@ width: 194px;
 
 .rest-slick__img {
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.07);
+=======
+ margin-right: 20px;
+ width: 277px;
+}
+
+.rest-box {
+  display: block;
+  width: 245px;
+  height: 245px;
+  }
+
+.rest-slick__img {
+   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+>>>>>>> Stashed changes
   border-radius: 2px;
+  
 }
 
 .my-slick-prev-rest,
@@ -169,6 +228,7 @@ width: 194px;
 .my-slick-prev-rest {
   background-image: url(../images/rest-home/cil_arrow-left.svg);
   z-index: 3;
+<<<<<<< Updated upstream
   right: 68px;
 
   @media (min-width: 1024px) {
@@ -178,11 +238,15 @@ width: 194px;
 @media (min-width: 1280px) {
   left: 440px;
 }
+=======
+  right: 75px;
+>>>>>>> Stashed changes
 }
 
 .my-slick-next-rest {
   background-image: url(../images/rest-home/cil_arrow-right.svg);
   z-index: 3;
+<<<<<<< Updated upstream
   right: 8px;
 
   @media (min-width: 1024px) {
@@ -192,4 +256,7 @@ width: 194px;
 @media (min-width: 1280px) {
   left: 510px;
 }
+=======
+  right: 15px;
+>>>>>>> Stashed changes
 }

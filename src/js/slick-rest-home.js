@@ -1,4 +1,4 @@
-$('.one-time').slick({
+$('.rest-gallery').slick({
   // dots: true,
   prevArrow: '<button type="button" class="my-slick-prev-rest"></button>',
   nextArrow: '<button type="button" class="my-slick-next-rest"></button>',
@@ -8,3 +8,7 @@ $('.one-time').slick({
   adaptiveHeight: true,
   variableWidth: true
 });
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes

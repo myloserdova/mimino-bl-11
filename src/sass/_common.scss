@@ -48,17 +48,20 @@ ul {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto; 
   padding-left: 15px;
   padding-right: 15px;
   max-width: 1280px;
 
+<<<<<<< Updated upstream
   @media screen and (max-width: 413px) {
     width: auto;
   }
 
   @media screen and (min-width: 414px) and (max-width: 1023px) {
+=======
+   @media screen and (min-width: 414px) and (max-width: 1023px) {
+>>>>>>> Stashed changes
     width: 414px;
   }
 
