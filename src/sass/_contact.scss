@@ -1,0 +1,106 @@
+.contact {
+    background: var(--backgroung-section);
+   
+}
+
+.contact__title {
+    font-family: 'Mimino';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: calc(43/40);
+    letter-spacing: 0.3em;
+    
+    padding-top: 36px;
+    margin-right: 15px;
+    
+    color: var(--section-title-color);
+}
+
+.contact__sub-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(20/16);
+    letter-spacing: 0.02em;
+    
+    margin-right: 15px;
+    padding-top: 12px;
+
+    color: var(--text-secondary-color);
+}
+
+.contact__address-item {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24/20);
+    letter-spacing: 0.02em;
+
+   
+
+    margin-right: 15px;
+    padding-top: 24px;
+    
+    color: var(--text-secondary-brown);
+}
+
+.contact__address {
+display: flex;
+justify-content: space-between;
+    
+}
+
+
+.contact__info { 
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: calc(17/14);
+letter-spacing: 0.02em;
+color: var(--section-title-color);   
+
+display: flex;
+
+
+border: 1px solid;
+padding: 8px ;
+border-color: var(--yellow);
+border-radius: 2px;
+
+background-color: var(--main-white);
+
+
+}
+
+
+.contact__phone-icon {
+    fill: var(--yellow);
+    margin-top: -2px;
+    position: absolute;
+}
+
+.contact__phone {
+    padding-left: 28px;
+}
+
+.contact____location-icon {
+    fill: var(--yellow);
+    margin-top: 10px;
+    position: absolute;
+}
+
+.contact__location {
+  padding-left: 44px;
+  padding-right: 30px;
+}
+
+
+
+.contact__maps {
+   width: 384px;
+   height: 220px;
+   margin-bottom: 32px;
+   margin-top: 32px;
+   border: 1px solid #BABABA;
+   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+   border-radius: 2px;
+}
