@@ -52,9 +52,13 @@ ul {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 100%;
+  max-width: 1280px;
 
-  @media screen and (min-width: 414px) {
+  @media screen and (max-width: 413px) {
+    width: auto;
+  }
+
+  @media screen and (min-width: 414px) and (max-width: 1023px) {
     width: 414px;
   }
 
