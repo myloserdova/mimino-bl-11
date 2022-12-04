@@ -1,0 +1,189 @@
+.homepage-hotel {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 24px 0;
+  position: relative;
+  @media (min-width: 1024px) {
+    padding: 48px 0;
+  }
+
+  @media screen and (max-width: 1023px) {
+    background-image: linear-gradient(0deg, #000000a7, #000000a7),
+      url('../images/homepage-hotel/homepage-hotel_bgi-mobile1x.jpg');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 1023px),
+    screen and (min-resolution: 192dpi) and (max-width: 1023px),
+    screen and (min-resolution: 2dppx) and (max-width: 1023px) {
+    background-image: linear-gradient(0deg, #000000a7, #000000a7),
+      url('../images/homepage-hotel/homepage-hotel_bgi-mobile2x.jpg');
+  }
+
+  @media screen and (min-width: 1024px) {
+    background-image: linear-gradient(0deg, #000000a7, #000000a7),
+      url('../images/homepage-hotel/homepage-hotel_bgi-tablet1x.jpg');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
+    screen and (min-resolution: 192dpi) and (min-width: 1024px),
+    screen and (min-resolution: 2dppx) and (min-width: 1024px) {
+    background-image: linear-gradient(0deg, #000000a7, #000000a7),
+      url('../images/homepage-hotel/homepage-hotel_bgi-tablet2x.jpg');
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: linear-gradient(0deg, #000000a7, #000000a7),
+      url('../images/homepage-hotel/homepage-hotel_bgi-desktop1x.jpg');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+    screen and (min-resolution: 192dpi) and (min-width: 1280px),
+    screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+    background-image: linear-gradient(0deg, #000000a7, #000000a7),
+      url('../images/homepage-hotel/homepage-hotel_bgi-desktop2x.jpg');
+  }
+
+  &__wrap {
+    background-color: dimgray;
+  }
+
+  &__logo {
+    font-family: Mimino;
+    font-size: 40px;
+    line-height: calc(43 / 40);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    color: var(--main-white);
+    @media (min-width: 1024px) {
+      font-size: 64px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__title-wrap {
+    width: 127px;
+    margin: 0 auto 20px auto;
+    @media (min-width: 1024px) {
+      margin: 0 278px 8px auto;
+      width: 202px;
+    }
+    @media (min-width: 1280px) {
+      margin: 0 338px 8px auto;
+    }
+  }
+
+  &__title {
+    color: var(--main-white);
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    letter-spacing: 0.02em;
+    text-align: end;
+    @media (min-width: 1024px) {
+      font-size: 24px;
+    }
+  }
+  &__text {
+    margin-left: 32px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    letter-spacing: 0.02em;
+    color: #b4b4b4;
+    width: 243px;
+    // margin-bottom: 48px;
+    @media (min-width: 1024px) {
+      font-size: 16px;
+      width: 549px;
+      margin: 0 278px 0 auto;
+    }
+    @media (min-width: 1280px) {
+      width: 595px;
+      margin: 0 338px 0 auto;
+    }
+  }
+  &__button-list {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: 1024px) {
+      position: absolute;
+      bottom: 100px;
+      right: 47px;
+    }
+    @media (min-width: 1280px) {
+      bottom: 95px;
+      right: 86px;
+    }
+  }
+  &__button {
+    letter-spacing: 0.02em;
+    color: var(--yellow);
+    border: 2px solid;
+    border-color: var(--main-white);
+    cursor: pointer;
+    background-color: #0004;
+    border-radius: 25px;
+    padding: 14px 0;
+    width: 236px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+  &__tut-bude-slider {
+    height: 398px;
+    @media (min-width: 1024px) {
+      height: 342px;
+      width: 679px;
+    }
+    @media (min-width: 1280px) {
+      width: 893px;
+    }
+  }
+}
+
+// .slick-item {
+//   margin-left: 48px;
+// }
+
+// .room-gallery {
+//   width: 370px;
+//   margin-bottom: 80px;
+// }
+// .room-gallery-mirror {
+//   width: 284px;
+//   @media screen and (min-width: 1024px) {
+//     width: 428px;
+//   }
+
+//   @media screen and (min-width: 1280px) {
+//     width: 584px;
+//   }
+// }
+
+// .my-slick-prev-hotel {
+//   position: absolute;
+//   width: 32px;
+//   height: 32px;
+//   top: 300px;
+//   left: 300px;
+//   background-image: url('../images/homepage-hotel/homepage-hotel_arrow2.svg');
+//   border: none;
+//   background-size: cover;
+//   cursor: pointer;
+//   z-index: 2;
+// }
+// .my-slick-next-hotel {
+//   position: absolute;
+//   width: 32px;
+//   height: 32px;
+//   top: 300px;
+//   left: 355px;
+//   background-image: url('../images/homepage-hotel/homepage-hotel_arrow1.svg');
+//   border: none;
+//   background-size: cover;
+//   cursor: pointer;
+//   z-index: 2;
+// }
