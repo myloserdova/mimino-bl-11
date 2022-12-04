@@ -1,13 +1,20 @@
 .rest-home {
   position: relative;
-  background-color: var(--backgroung-section);
+  background-color: var(--background-section);
   margin: 0;
+
+  @media screen and (min-width: 1024px) {
+    background-image: url(../images/three-lines.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
-  
-  .rest-home__container{
+
+.rest-home__container {
   @media (min-width: 1024px) {
     padding: 120px 60px 30px 47px;
-   }
+  }
 
   @media (min-width: 1280px) {
     padding: 120px 85px 30px 85px;
@@ -93,18 +100,17 @@ background-image: linear-gradient(
 }
 
 .rest-slick {
-  
   @media (min-width: 1024px) {
     position: absolute;
     top: 927px;
   }
- }
+}
 
 .rest-slick__list {
-   display: flex;
+  display: flex;
   justify-content: center;
   margin-left: 69px;
-   padding-bottom: 72px;
+  padding-bottom: 72px;
 
   @media (min-width: 1024px) {
     padding-bottom: 96px;
@@ -120,23 +126,23 @@ background-image: linear-gradient(
 .rest-slick__item {
   margin-right: 19px;
   @media screen and (min-width: 1024px) {
-    margin-left: 40px;    
-    }
+    margin-left: 40px;
+  }
 }
 
 .rest-slick__box {
-height: 245px;
-width: 245px;
-
-@media (min-width: 1024px) {
- height: 194px;
-width: 194px;
-}
-
-@media (min-width: 1280px) {
   height: 245px;
   width: 245px;
-}
+
+  @media (min-width: 1024px) {
+    height: 194px;
+    width: 194px;
+  }
+
+  @media (min-width: 1280px) {
+    height: 245px;
+    width: 245px;
+  }
 }
 
 .rest-slick__img {
@@ -159,11 +165,11 @@ width: 194px;
 
   @media (min-width: 1024px) {
     top: 240px;
-   }
+  }
 
-   @media (min-width: 1280px) {
+  @media (min-width: 1280px) {
     top: 300px;
-   }
+  }
 }
 
 .my-slick-prev-rest {
@@ -172,12 +178,12 @@ width: 194px;
   right: 68px;
 
   @media (min-width: 1024px) {
-     left: 340px;
-}
+    left: 340px;
+  }
 
-@media (min-width: 1280px) {
-  left: 440px;
-}
+  @media (min-width: 1280px) {
+    left: 440px;
+  }
 }
 
 .my-slick-next-rest {
@@ -187,9 +193,9 @@ width: 194px;
 
   @media (min-width: 1024px) {
     left: 400px;
-}
+  }
 
-@media (min-width: 1280px) {
-  left: 510px;
-}
+  @media (min-width: 1280px) {
+    left: 510px;
+  }
 }
