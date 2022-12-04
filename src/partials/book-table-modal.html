@@ -1,0 +1,41 @@
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal__book-table" id="myModal" role="dialog" aria-hidden="true">
+        <button class="modal__button--close" data-modal-close>
+            <svg class="modal__book--icon" width="24px" height="24px">
+                <use href="./images/symbol-defs.svg#icon-cross"></use>
+            </svg>
+        </button>
+        <h2 class="modal__book-title">ЗАБРОНЮВАТИ СТОЛИК</h2>
+        <form name="booking-table_form" class="booking-table__form">
+            <div class="booking-table__item">
+                <input class="booking-table__input" id="user_name" type="text" name="username" pattern="[A-Za-zА-Яа-я]" placeholder="Ваше ім’я">
+                <label class="booking-table__label" for="user_name">На кого забронювати столик?</label>
+                <input class="tel-input booking-table__input" id="user_tel" type="tel" name="tel" value="+38 (___) ___ - __ - __" mask="+38 (999) 999 - 99 - 99" placeholder="+38 (___) ___ - __ - __">
+                <label class="booking-table__label" for="user_tel">Номер телефону</label>
+            </div>
+            <div class="booking-table__item select-icon">
+                <div class="booking-table__select-container">
+                <select class="booking-table__select" id="booking-table-number" name="booking-table-number">
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                </div>
+                <label class="booking-table__label" for="booking-table-number">Столик на яку кількість осіб?</label>
+                <div class="booking-table__select-container">
+                <input class="booking-table__select" type="date" min="1920-01-01" id="booking-table-date"/>
+                </div>
+                <label class="booking-table__label" for="booking-table-date" name="booking-table-date">На яку дату бронювати?</label>
+            </div>
+        </form>
+        <button type="submit" class="modal__book-button">ОФОРМИТИ БРОНЮВАННЯ</button>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/imask/6.4.3/imask.min.js"
+    integrity="sha512-yJ3vm1HmQtcgeMtbUYCp7PuTLyjU+ffCnVNTuE1Uccv1BmkoaJIXt1EjBVGnscjCILc62hTJJJ2rJJBTcw8RjQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+

@@ -893,7 +893,7 @@
 .slick__box-room--first {
   background-image: url(../images/hero-room-m.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  // background-position: center;
   background-size: cover;
   width: 414px;
   height: 740px;
@@ -910,7 +910,7 @@
 .slick__box-room--second {
   background-image: url(../images/hero-room-m.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  // background-position: center;
   background-size: cover;
   width: 414px;
   height: 740px;
@@ -984,7 +984,6 @@
   cursor: pointer;
 
   border: none;
-  color: green;
   background-color: transparent;
 }
 
