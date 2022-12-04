@@ -1,83 +1,88 @@
+.homepage-restaurant {
+  @media screen and (min-width: 1024px) {
+    background-image: url(../images/three-lines.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
 .rest-slider {
-    display: flex;
-    margin-top: 32px;
-    width: 720px;
-    margin-bottom: 50px;
+  display: flex;
+  margin-top: 32px;
+  width: 720px;
+  margin-bottom: 50px;
 
-    @media screen and (min-width: 1024px) {
-        margin-top: 176px;
-        min-width: 428px;
-    }
+  @media screen and (min-width: 1024px) {
+    margin-top: 176px;
+    min-width: 428px;
+  }
 
-    &:first-child {
-        margin-left: 0px;
-    }
+  &:first-child {
+    margin-left: 0px;
+  }
 }
 
 .slick-item {
-    margin-left: 86px;
+  margin-left: 86px;
 
-    @media screen and (min-width: 1024px) {
-        margin-left: 30px;
-    }
+  @media screen and (min-width: 1024px) {
+    margin-left: 30px;
+  }
 }
 
 .my-slick-prev-restaurant,
 .my-slick-next-restaurant {
-    position: absolute;
+  position: absolute;
 }
 
 .my-slick-prev-restaurant {
-    background-image: url(../images/cil_arrow-left-hotel.svg);
+  background-image: url(../images/cil_arrow-left-hotel.svg);
 
-    width: 32px;
-    height: 32px;
-    border: none;
-    color: #0000;
-    background-size: cover;
-    background-color: #0000;
+  width: 32px;
+  height: 32px;
+  border: none;
+  color: #0000;
+  background-size: cover;
+  background-color: #0000;
 
-    bottom: -40px;
-    right: 70px;
+  bottom: -40px;
+  right: 70px;
 }
 
 .my-slick-next-restaurant {
-    background-image: url(../images/cil_arrow-right-hotel.svg);
+  background-image: url(../images/cil_arrow-right-hotel.svg);
 
-    width: 32px;
-    height: 32px;
-    border: none;
-    color: #0000;
-    background-size: cover;
-    background-color: #0000;
+  width: 32px;
+  height: 32px;
+  border: none;
+  color: #0000;
+  background-size: cover;
+  background-color: #0000;
 
-    bottom: -40px;
-    right: 30px;
+  bottom: -40px;
+  right: 30px;
 }
 
-
-
-
-
 .rest-btn {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(20 / 16);
-    letter-spacing: 0.01em;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.01em;
 
-    padding: 14px 24px;
-    color: var(--yellow);
-    background-color: rgba(0, 0, 0, 0.4);
-    border: 2px solid;
-    border-color: var(--main-white);
-    border-radius: 25px;
+  padding: 14px 24px;
+  color: var(--yellow);
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid;
+  border-color: var(--main-white);
+  border-radius: 25px;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-        background-color: var(--main-white);
-    }
+  &:hover,
+  &:focus {
+    background-color: var(--main-white);
+  }
 }
