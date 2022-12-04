@@ -3,4 +3,8 @@ import './js/slick-img-rooms';
 import './js/slick-rest-home';
 import './js/book-table-modal';
 import './js/phone-mask';
-
+import './js/imask';
+import './js/modal';
+import './js/slick-img-rooms-reverse';
+import './js/slick-rest-home';
+import './js/slick-for-restaurant';

@@ -1,0 +1,106 @@
+<div class="modal-book-room__backdrop is-hidden">
+  <div class="modal-book-room">
+    <button class="close-modal-button" type="button">
+      <svg class="close-modal-button__icon" width="24" height="24">
+        <use href="./images/symbol-defs.svg#icon-close-modal"></use>
+      </svg>
+    </button>
+    <h2 class="modal-book-room__title">Забронювати номер</h2>
+    <form class="modal-book-room__form">
+      <div class="modal-book-room__container">
+        <div class="modal-book-room__wrap">
+          <input
+            class="modal-book-room__input"
+            type="text"
+            name="username"
+            id="name"
+            placeholder="Ваше ім'я"
+            required
+            pattern="[A-Za-zА-Яа-я]{3,}"
+            title="Ім'я повинне складатися мінімум з трьох букв"
+            autocomplete="off"
+          />
+          <label class="modal-book-room__label" for="name"
+            >На кого забронювати номер?</label
+          >
+        </div>
+
+        <div class="modal-book-room__wrap">
+          <input
+            class="modal-book-room__input js-tel-input"
+            type="tel"
+            name="usertel"
+            id="tel"
+            required
+            autocomplete="off"
+          />
+          <label class="modal-book-room__label" for="tel">Номер телефону</label>
+        </div>
+
+        <div class="modal-book-room__wrap">
+          <select class="js-choice" name="room-category" id="room-category">
+            <option value="lux-room" selected>Двомісний люкс</option>
+            <option value="2-pesron-room">Двомісний номер</option>
+            <option value="3-person-room">Трьохмісний номер</option>
+          </select>
+          <label class="modal-book-room__label" for="room-category"
+            >Категорія номеру</label
+          >
+        </div>
+      </div>
+
+      <div class="modal-book-room__control">
+        <div class="modal-book-room__wrap">
+          <label class="modal-book-room__label" for="date-in"
+            ><div class="modal-book-room__date-input-wrap">
+              <input
+                class="modal-book-room__input modal-book-room__input--date-input"
+                type="date"
+                name="date-in"
+                id="date-in"
+                placeholder="Сьогодні"
+              />
+              <!-- <span class="modal-book-room__date-input-overlay">
+                <svg
+                  class="modal-book-room__date-input-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/symbol-defs.svg#icon-arrow-down"></use>
+                </svg>
+              </span> -->
+            </div>
+            Дата заїзду</label
+          >
+        </div>
+
+        <div class="modal-book-room__wrap">
+          <label class="modal-book-room__label" for="date-out"
+            ><div class="modal-book-room__date-input-wrap">
+              <input
+                class="modal-book-room__input modal-book-room__input--date-input"
+                type="date"
+                name="date-out"
+                id="date-out"
+              />
+              <!-- <span class="modal-book-room__date-input-overlay"
+                ><svg
+                  class="modal-book-room__date-input-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/symbol-defs.svg#icon-arrow-down"></use>
+                </svg>
+              </span> -->
+            </div>
+            Дата виїзду</label
+          >
+        </div>
+      </div>
+
+      <button class="modal-book-room__submit-button" type="submit">
+        Оформити бронювання
+      </button>
+    </form>
+  </div>
+</div>

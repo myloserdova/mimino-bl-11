@@ -28,7 +28,16 @@
           type="image/jpeg"
           media="(max-width: 1279px)"
         />
+        <source
+          srcset="
+            ./images/modern-studio-desk.jpg    1x,
+            ./images/modern-studio-desk@2x.jpg 2x
+          "
+          type="image/jpeg"
+          media="(min-width: 1280px)"
+        />
         <img
+          class="room-type__bedroom"
           src="./images/modern-studio-apartment-design-with-bedroom-living-space 1.jpg"
           alt="bedroom"
         />
@@ -53,6 +62,11 @@
                 type="image/jpeg"
                 media="(max-width: 1279px)"
               />
+              <source
+                srcset="./images/bath-desk.jpg 1x, ./images/bath-desk@2x.jpg 2x"
+                type="image/jpeg"
+                media="(min-width: 1280px)"
+              />
               <img src="./images/bath-hotel.jpg" alt="ванна кімната" />
             </picture>
           </div>
@@ -62,7 +76,15 @@
             <source
               srcset="./images/cup-tea.jpg 1x, ./images/cup-tea@2x.jpg 2x"
               type="image/jpeg"
-              media="(min-width: 414px)"
+              media="(max-width: 1279px)"
+            />
+            <source
+              srcset="
+                ./images/cup-tea-desk.jpg    1x,
+                ./images/cup-tea-desk@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(min-width: 1280px)"
             />
             <img src="./images/cup-tea.jpg" alt="чашка кави" />
           </picture>
@@ -72,7 +94,15 @@
             <source
               srcset="./images/cup-tea.jpg 1x, ./images/cup-tea@2x.jpg 2x"
               type="image/jpeg"
-              media="(min-width: 414px)"
+              media="(max-width: 1279px)"
+            />
+            <source
+              srcset="
+                ./images/cup-tea-desk.jpg    1x,
+                ./images/cup-tea-desk@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(min-width: 1280px)"
             />
             <img src="./images/cup-tea.jpg" alt="чашка кави" />
           </picture>
@@ -82,83 +112,172 @@
             <source
               srcset="./images/cup-tea.jpg 1x, ./images/cup-tea@2x.jpg 2x"
               type="image/jpeg"
-              media="(min-width: 414px)"
+              media="(max-width: 1279px)"
+            />
+            <source
+              srcset="
+                ./images/cup-tea-desk.jpg    1x,
+                ./images/cup-tea-desk@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(min-width: 1280px)"
             />
             <img src="./images/cup-tea.jpg" alt="чашка кави" />
           </picture>
         </li>
       </ul>
-      <button class="my-slick-prev">
-        <svg width="32" height="32">
-          <use href="./images/symbol-defs.svg#icon-cil_arrow-left"></use>
-        </svg>
-      </button>
-      <button class="my-slick-next">
-        <svg width="32" height="32">
-          <use href="./images/symbol-defs.svg#icon-cil_arrow-right"></use>
-        </svg>
-      </button>
-      <button class="button-about" type="button">Детальніше</button>
-      <button class="button-prices" type="button">Переглянути ціни</button>
+      <div class="button-box-main">
+        <a class="button-about" href="./room.html">Детальніше</a>
+        <button class="button-prices" type="button">Переглянути ціни</button>
+      </div>
     </div>
-    <div class="section-reverse">
+  </div>
+</section>
+<section class="hotel-rooms hotel-rooms--reverse">
+  <div class="container container--rooms">
+    <div class="bcg-rooms">
       <p class="brend-text brend-text--reverse">Amet minim mollit non</p>
       <a href="#" class="brend-logo brend-logo--reverse">Mimiho</a>
       <h3 class="room-type room-type--reverse">
         <span class="room-type__count">трьохмісний номер</span>
       </h3>
-      <div class="text-box">
-        <p class="room-type__description">
+      <div class="room-type__box-reverse">
+        <p class="room-type__description room-type__description--reverse">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet.
         </p>
       </div>
-      <!-- <picture class="room-type__photo room-type__photo--reverse">
+      <picture class="room-type__photo room-type__photo--reverse">
         <source
           srcset="
             ./images/modern-studio-mb.jpg    1x,
             ./images/modern-studio-mb@2x.jpg 2x
           "
           type="image/jpeg"
-          media="(min-width: 414px)"
+          media="(max-width: 1023px)"
+        />
+        <source
+          srcset="
+            ./images/modern-studio-tb.jpg    1x,
+            ./images/modern-studio-tb@2x.jpg 2x
+          "
+          type="image/jpeg"
+          media="(max-width: 1279px)"
+        />
+        <source
+          srcset="
+            ./images/modern-studio-desk.jpg    1x,
+            ./images/modern-studio-desk@2x.jpg 2x
+          "
+          type="image/jpeg"
+          media="(min-width: 1280px)"
         />
         <img
+          class="room-type__bedroom"
           src="./images/modern-studio-apartment-design-with-bedroom-living-space 1.jpg"
           alt="bedroom"
         />
-      </picture> -->
-      <div class="room-gallery room-gallery--reverse">
-        <div>
-          <picture>
-            <source
-              srcset="
-                ./images/bath-hotel-reverse.jpg    1x,
-                ./images/bath-hotel-reverse@2x.jpg 2x
-              "
-              type="image/jpeg"
-              media="(min-width: 414px)"
-            />
-            <img src="./images/bath-hotel-reverse.jpg" alt="ванна кімната" />
-          </picture>
-        </div>
-        <div>
-          <picture>
-            <source
-              srcset="
-                ./images/cup-tea-reverse.jpg    1x,
-                ./images/cup-tea-reverse@2x.jpg 2x
-              "
-              type="image/jpeg"
-              media="(min-width: 414px)"
-            />
-            <img src="./images/cup-tea-reverse.jpg" alt="чашка кави" />
-          </picture>
-        </div>
+      </picture>
+      <div class="room-gallery-reverse">
+        <ul class="room-gallery-mirror">
+          <li class="slick-item">
+            <div class="slick-box">
+              <picture>
+                <source
+                  srcset="
+                    ./images/bath-hotel.jpg    1x,
+                    ./images/bath-hotel@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(max-width: 1023px)"
+                />
+                <source
+                  srcset="
+                    ./images/bath-hotel-tb.jpg    1x,
+                    ./images/bath-hotel-tb@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(max-width: 1279px)"
+                />
+                <source
+                  srcset="
+                    ./images/bath-desk.jpg    1x,
+                    ./images/bath-desk@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1280px)"
+                />
+                <img src="./images/bath-hotel.jpg" alt="ванна кімната" />
+              </picture>
+            </div>
+          </li>
+          <li class="slick-item">
+            <picture>
+              <source
+                srcset="./images/cup-tea.jpg 1x, ./images/cup-tea@2x.jpg 2x"
+                type="image/jpeg"
+                media="(max-width: 1279px)"
+              />
+              <source
+                srcset="
+                  ./images/cup-tea-desk.jpg    1x,
+                  ./images/cup-tea-desk@2x.jpg 2x
+                "
+                type="image/jpeg"
+                media="(min-width: 1280px)"
+              />
+
+              <img src="./images/cup-tea.jpg" alt="чашка кави" />
+            </picture>
+          </li>
+          <li class="slick-item">
+            <picture>
+              <source
+                srcset="./images/cup-tea.jpg 1x, ./images/cup-tea@2x.jpg 2x"
+                type="image/jpeg"
+                media="(max-width: 1279px)"
+              />
+              <source
+                srcset="
+                  ./images/cup-tea-desk.jpg    1x,
+                  ./images/cup-tea-desk@2x.jpg 2x
+                "
+                type="image/jpeg"
+                media="(min-width: 1280px)"
+              />
+              <img src="./images/cup-tea.jpg" alt="чашка кави" />
+            </picture>
+          </li>
+          <li class="slick-item">
+            <picture>
+              <source
+                srcset="./images/cup-tea.jpg 1x, ./images/cup-tea@2x.jpg 2x"
+                type="image/jpeg"
+                media="(max-width: 1279px)"
+              />
+              <source
+                srcset="
+                  ./images/cup-tea-desk.jpg    1x,
+                  ./images/cup-tea-desk@2x.jpg 2x
+                "
+                type="image/jpeg"
+                media="(min-width: 1280px)"
+              />
+              <img src="./images/cup-tea.jpg" alt="чашка кави" />
+            </picture>
+          </li>
+        </ul>
       </div>
-      <button class="button-about" type="button">Детальніше</button>
-      <button class="button-prices" type="button">Переглянути ціни</button>
+      <div class="button-box-reverse">
+        <a class="button-about" href="./room.html">Детальніше</a>
+        <button class="button-prices" type="button">Переглянути ціни</button>
+      </div>
     </div>
+  </div>
+</section>
+<section class="hotel-rooms">
+  <div class="container container--rooms">
     <div class="bcg-rooms">
       <p class="brend-text">Amet minim mollit non</p>
       <a href="#" class="brend-logo">Mimiho</a>
@@ -170,52 +289,125 @@
         sint. Velit officia consequat duis enim velit mollit. Exercitation
         veniam consequat sunt nostrud amet.
       </p>
-      <!-- <picture class="room-type__photo">
+      <picture class="room-type__photo">
         <source
           srcset="
             ./images/modern-studio-mb.jpg    1x,
             ./images/modern-studio-mb@2x.jpg 2x
           "
           type="image/jpeg"
-          media="(min-width: 414px)"
+          media="(max-width: 1023px)"
+        />
+        <source
+          srcset="
+            ./images/modern-studio-tb.jpg    1x,
+            ./images/modern-studio-tb@2x.jpg 2x
+          "
+          type="image/jpeg"
+          media="(max-width: 1279px)"
+        />
+        <source
+          srcset="
+            ./images/modern-studio-desk.jpg    1x,
+            ./images/modern-studio-desk@2x.jpg 2x
+          "
+          type="image/jpeg"
+          media="(min-width: 1280px)"
         />
         <img
+          class="room-type__bedroom"
           src="./images/modern-studio-apartment-design-with-bedroom-living-space 1.jpg"
           alt="bedroom"
         />
-      </picture> -->
-      <div class="room-gallery">
-        <div>
-          <picture>
-            <source
-              srcset="./images/bath-hotel.jpg 1x, ./images/bath-hotel@2x.jpg 2x"
-              type="image/jpeg"
-              media="(min-width: 414px)"
-            />
-            <img src="./images/bath-hotel.jpg" alt="ванна кімната" />
-          </picture>
-        </div>
-        <div>
+      </picture>
+      <ul class="room-gallery">
+        <li class="slick-item">
+          <div class="slick-box">
+            <picture>
+              <source
+                srcset="
+                  ./images/bath-hotel.jpg    1x,
+                  ./images/bath-hotel@2x.jpg 2x
+                "
+                type="image/jpeg"
+                media="(max-width: 1023px)"
+              />
+              <source
+                srcset="
+                  ./images/bath-hotel-tb.jpg    1x,
+                  ./images/bath-hotel-tb@2x.jpg 2x
+                "
+                type="image/jpeg"
+                media="(max-width: 1279px)"
+              />
+              <source
+                srcset="./images/bath-desk.jpg 1x, ./images/bath-desk@2x.jpg 2x"
+                type="image/jpeg"
+                media="(min-width: 1280px)"
+              />
+              <img src="./images/bath-hotel.jpg" alt="ванна кімната" />
+            </picture>
+          </div>
+        </li>
+        <li class="slick-item">
           <picture>
             <source
               srcset="./images/cup-tea.jpg 1x, ./images/cup-tea@2x.jpg 2x"
               type="image/jpeg"
-              media="(min-width: 414px)"
+              media="(max-width: 1279px)"
+            />
+            <source
+              srcset="
+                ./images/cup-tea-desk.jpg    1x,
+                ./images/cup-tea-desk@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(min-width: 1280px)"
             />
             <img src="./images/cup-tea.jpg" alt="чашка кави" />
           </picture>
-        </div>
+        </li>
+        <li class="slick-item">
+          <picture>
+            <source
+              srcset="./images/cup-tea.jpg 1x, ./images/cup-tea@2x.jpg 2x"
+              type="image/jpeg"
+              media="(max-width: 1279px)"
+            />
+            <source
+              srcset="
+                ./images/cup-tea-desk.jpg    1x,
+                ./images/cup-tea-desk@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(min-width: 1280px)"
+            />
+            <img src="./images/cup-tea.jpg" alt="чашка кави" />
+          </picture>
+        </li>
+        <li class="slick-item">
+          <picture>
+            <source
+              srcset="./images/cup-tea.jpg 1x, ./images/cup-tea@2x.jpg 2x"
+              type="image/jpeg"
+              media="(max-width: 1279px)"
+            />
+            <source
+              srcset="
+                ./images/cup-tea-desk.jpg    1x,
+                ./images/cup-tea-desk@2x.jpg 2x
+              "
+              type="image/jpeg"
+              media="(min-width: 1280px)"
+            />
+            <img src="./images/cup-tea.jpg" alt="чашка кави" />
+          </picture>
+        </li>
+      </ul>
+      <div class="button-box-main">
+        <a class="button-about" href="./room.html">Детальніше</a>
+        <button class="button-prices" type="button">Переглянути ціни</button>
       </div>
-      <div class="gallery-buttons">
-        <svg width="32" height="32">
-          <use href="./images/symbol-defs.svg#icon-cil_arrow-left"></use>
-        </svg>
-        <svg width="32" height="32">
-          <use href="./images/symbol-defs.svg#icon-cil_arrow-right"></use>
-        </svg>
-      </div>
-      <button class="button-about" type="button">Детальніше</button>
-      <button class="button-prices" type="button">Переглянути ціни</button>
     </div>
   </div>
 </section>
