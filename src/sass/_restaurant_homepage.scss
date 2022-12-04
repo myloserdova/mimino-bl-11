@@ -1,3 +1,80 @@
+ .homepage-restaurant {
+    background-color: tomato;
+
+    background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 24px 0;
+        position: relative;
+    
+        @media (min-width: 1024px) {
+            padding: 48px 0;
+        }
+    
+        @media screen and (max-width: 1023px) {
+            background-image: linear-gradient(0deg, #000000a7, #000000a7),
+                url('../images/rest_bg/bg_mobile.jpg');
+        }
+    
+        @media screen and (min-device-pixel-ratio: 2) and (max-width: 1023px),
+        screen and (min-resolution: 192dpi) and (max-width: 1023px),
+        screen and (min-resolution: 2dppx) and (max-width: 1023px) {
+            background-image: linear-gradient(0deg, #000000a7, #000000a7),
+                url('../images/rest_bg/bg_mobile@2x.jpg');
+        }
+    
+        @media screen and (min-width: 1024px) {
+            background-image: linear-gradient(0deg, #000000a7, #000000a7),
+                url('../images/rest_bg/bg_tablet.jpg');
+        }
+    
+        @media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
+        screen and (min-resolution: 192dpi) and (min-width: 1024px),
+        screen and (min-resolution: 2dppx) and (min-width: 1024px) {
+            background-image: linear-gradient(0deg, #000000a7, #000000a7),
+                url('../images/rest_bg/bg_tablet@2x.jpg');
+        }
+    
+        @media screen and (min-width: 1280px) {
+            background-image: linear-gradient(0deg, #000000a7, #000000a7),
+                url('../images/rest_bg/bg_desk.jpg');
+        }
+    
+        @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+        screen and (min-resolution: 192dpi) and (min-width: 1280px),
+        screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+            background-image: linear-gradient(0deg, #000000a7, #000000a7),
+                url('../images/rest_bg/bg_desk@2x.jpg');
+        }
+       
+    
+ }
+
+
+ .homepage-restaurant__name{
+font-family: mimino
+ }
+
+
+.homepage-restauran__title{
+    font-family: 'Montserrat';
+        font-size: 20px;
+        line-height:calc(24/20);
+        letter-spacing: 0.02em;
+        color:var(--main-white);
+}
+
+
+.homepage-restauran__text{
+    font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 12px;
+        line-height:calc(15/12);
+        letter-spacing: 0.02em;
+        color:var(--text-color);
+}
+
+
 .rest-slider {
     display: flex;
     margin-top: 32px;
@@ -8,11 +85,8 @@
         margin-top: 176px;
         min-width: 428px;
     }
-
-    &:first-child {
-        margin-left: 0px;
-    }
 }
+
 
 .slick-item {
     margin-left: 86px;
@@ -43,7 +117,6 @@
 
 .my-slick-next-restaurant {
     background-image: url(../images/cil_arrow-right-hotel.svg);
-
     width: 32px;
     height: 32px;
     border: none;
@@ -54,9 +127,6 @@
     bottom: -40px;
     right: 30px;
 }
-
-
-
 
 
 .rest-btn {
