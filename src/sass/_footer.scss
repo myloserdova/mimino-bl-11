@@ -40,9 +40,11 @@
   line-height: calc(43 / 40);
   letter-spacing: 0.3em;
 
-  margin-left: 59px;
-
   color: var(--border-button-room);
+
+  @media screen and (min-width: 414px) {
+    margin-left: 59px;
+  }
 
   &:hover,
   &:focus {

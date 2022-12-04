@@ -386,7 +386,11 @@
 .restaurant-list-nav {
   display: flex;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 14px;
+
+  @media screen and (min-width: 414px) {
+    margin-right: 20px;
+  }
 
   @media screen and (min-width: 1024px) {
     margin-right: 72px;
@@ -470,10 +474,15 @@
 .restaurant-list-nav__link,
 .hotel-list-nav__link {
   font-weight: 500;
-  font-size: 16px;
-  line-height: calc(20 / 16);
+  font-size: 12px;
+  line-height: calc(20 / 12);
   color: var(--yellow);
   margin-right: 6px;
+
+  @media screen and (min-width: 414px) {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
 
   @media screen and (min-width: 1024px) {
     font-size: 20px;
@@ -537,8 +546,8 @@
 }
 
 .hero__tittle {
-  font-size: 96px;
-  line-height: calc(103 / 96);
+  font-size: 90px;
+  line-height: calc(103 / 90);
   font-family: Mimino;
   font-weight: 700;
   letter-spacing: 0.3em;
@@ -546,6 +555,11 @@
   color: var(--main-white);
   margin-bottom: 24px;
   text-align: center;
+
+  @media screen and (min-width: 414px) {
+    font-size: 96px;
+    line-height: calc(103 / 96);
+  }
 
   @media screen and (min-width: 1024px) {
     font-size: 128px;
@@ -839,18 +853,25 @@
   color: var(--main-white);
 
   font-weight: 700;
-  font-size: 12px;
-  line-height: calc(15 / 12);
+  font-size: 10px;
+  line-height: calc(15 / 10);
   letter-spacing: 0.02em;
 
   text-align: left;
 
-  width: 326px;
+  width: 290px;
   height: 61px;
 
   position: absolute;
   bottom: 118px;
   left: 15px;
+
+  @media screen and (min-width: 414px) {
+    width: 326px;
+
+    font-size: 12px;
+    line-height: calc(15 / 12);
+  }
 
   @media screen and (min-width: 1024px) {
     font-size: 16px;
