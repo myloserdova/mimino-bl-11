@@ -130,9 +130,14 @@ background-image: linear-gradient(
 }
 
 .rest-slick__item {
-  margin-right: 19px;
+  margin-right: 24px;
   @media screen and (min-width: 1024px) {
     margin-left: 40px;
+    margin-right: 0;
+  }
+  @media (min-width: 1280px) {
+    margin-left: 40px;
+    margin-right: 0;
   }
 }
 
