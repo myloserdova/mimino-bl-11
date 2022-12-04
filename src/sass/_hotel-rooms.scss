@@ -1,11 +1,13 @@
 .hotel-rooms {
 position: relative;
+background-color: var(--backgroung-section);
+}
+.hotel-rooms--reverse {
+background-color: var(--section-reverse-background-color);
 }
 .bcg-rooms {
     padding-top: 32px;
     padding-bottom: 32px;
-    background-color: #fffdee;
-    width: 100%;
     @media screen and (min-width: 1024px) {
             padding-left: 47px;
             padding-right: 47px;
@@ -45,7 +47,7 @@ margin: 0 auto;
     font-weight: 400;
     font-size: 20px;
     line-height: calc(23 / 20);
-    color: #b4b4b4;
+    color: var(--text-color);
     @media screen and (min-width: 1024px) {
     padding-left: 0;
     font-family: 'Times New Roman';
@@ -65,7 +67,7 @@ margin: 0 auto;
     line-height: calc(43 / 40);
     letter-spacing: 0.3em;
     text-transform: uppercase;
-    color: #494848;
+    color: var(--section-title-color);
     @media screen and (min-width: 1024px) {
     padding-left: 0;
     font-size: 64px;
@@ -81,7 +83,7 @@ margin: 0 auto;
     font-size: 24px;
     line-height: calc(28 / 24);
     letter-spacing: 0.05em;
-    color: #000000;
+    color: var(--black-color-room);
     @media screen and (min-width: 1024px) {
     margin-top: 62px;
     padding-left: 0;
@@ -109,7 +111,7 @@ margin: 0 auto;
     font-size: 12px;
     line-height: calc(15 / 12);
     letter-spacing: 0.02em;
-    color: #5f5f5f;
+    color: var(--text-secondary-color);
     @media screen and (min-width: 1024px) {
     margin-top: 16px;
     width: 400px;
@@ -220,16 +222,16 @@ font-size: 16px;
 line-height: calc(20 / 16);
 letter-spacing: 0.02em;
 border-radius: 25px;
-border: 2px solid #FFFDEE;
-background-color: #000000;
-color: #F3C653;
+border: 2px solid var(--backgroung-section);
+background-color: var(--black-color-room);
+color: var(--border-button-room);
 @media screen and (min-width: 1024px) {
 margin-top: 0;    
 }
 
 &:hover, &:focus {
-background-color: #fff;
-border: 2px solid #F3C653;
+background-color: var(--main-white);
+border: 2px solid var(--border-button-room);
 }
 }
 .button-prices {
@@ -247,19 +249,19 @@ border: 2px solid #F3C653;
     line-height: calc(20 / 16);
     letter-spacing: 0.02em;
     border-radius: 25px;
-    border: 2px solid #FFFDEE;
-    background-color: #000000;
-    color: #F3C653;
+    border: 2px solid --backgroung-section;
+    background-color: var(--black-color-room);
+    color: var(--border-button-room);
     &:hover,
         &:focus {
-            background-color: #fff;
-            border: 2px solid #F3C653;
+            background-color: var(--main-white);
+            border: 2px solid var(--border-button-room);
         }
 }
 .section-reverse {
 position: relative;
 padding-top: 32px;
-background-color: #F0ECD6;
+background-color: var(--section-reverse-background-color);
 padding-bottom: 32px;
 width: 100%;
 @media screen and (min-width: 1024px) {
