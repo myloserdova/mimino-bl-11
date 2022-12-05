@@ -1,5 +1,4 @@
 .gallery {
-  border-top: 1px solid var(--black-color-room);
   padding-bottom: 160px;
   background-color: var(--backgroung-section);
   .gallery-bedroom-container {
@@ -81,7 +80,7 @@
     .hotel-room {
       @media (min-width: 1024px) {
         position: relative;
-        top: -50px;
+        top: -25px;
         z-index: 1;
         left: 0;
       }
@@ -165,7 +164,7 @@
         margin-top: 188px;
       }
       .slick-item {
-        margin-left: 40px;
+        margin-left: 25px;
       }
     }
   }

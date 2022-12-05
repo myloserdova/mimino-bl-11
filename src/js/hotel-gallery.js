@@ -4,7 +4,7 @@ $('.gallery-hotel').slick({
     nextArrow: '<button type="button" class="next-gallery-hotel"></button>',
     infinite: true,
     speed: 300,
-    slidesToShow: 2.05,
+    slidesToShow: 2,
     adaptiveHeight: true,
   });
   
