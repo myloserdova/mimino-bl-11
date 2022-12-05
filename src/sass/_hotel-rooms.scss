@@ -1,449 +1,464 @@
 .hotel-rooms {
-position: relative;
-background-color: var(--backgroung-section);
+  position: relative;
+  background-color: var(--background-section);
+
+  @media screen and (min-width: 1024px) {
+    background-image: url(../images/three-lines.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 .hotel-rooms--reverse {
-background-color: var(--section-reverse-background-color);
+  background-color: var(--section-reverse-background-color);
+
+  @media screen and (min-width: 1024px) {
+    background-image: url(../images/three-lines.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 .bcg-rooms {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    @media screen and (min-width: 1024px) {
-            padding-left: 47px;
-            padding-right: 47px;
-            padding-top: 62px;
-            padding-bottom: 104px;
-            position: relative;
-        }
-    @media screen and (min-width: 1280px) {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  @media screen and (min-width: 1024px) {
+    padding-left: 47px;
+    padding-right: 47px;
+    padding-top: 62px;
+    padding-bottom: 104px;
+    position: relative;
+  }
+  @media screen and (min-width: 1280px) {
     padding-left: 85px;
     padding-right: 85px;
     padding-top: 72px;
     padding-bottom: 112px;
-    }
+  }
 }
 .container--rooms {
-margin-left: 0;
-width: auto;
-padding-left: 0;
-padding-right: 0;
-@media screen and (min-width: 414px) and (max-width: 1023px) {
-width: 414px;
-margin: 0 auto;    
-}
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-width: 1024px;
-margin: 0 auto;    
-}
-@media screen and (min-width: 1280px) {
-width: 1280px;
-margin: 0 auto;    
-}
+  margin-left: 0;
+  width: auto;
+  padding-left: 0;
+  padding-right: 0;
+  @media screen and (min-width: 414px) and (max-width: 1023px) {
+    width: 414px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    width: 1024px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    margin: 0 auto;
+  }
 }
 .brend-text {
-    padding-left: 15px;
-    font-family: "Times New Roman";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: calc(23 / 20);
-    color: var(--text-color);
-    @media screen and (min-width: 1024px) {
+  padding-left: 15px;
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  color: var(--text-color);
+  @media screen and (min-width: 1024px) {
     padding-left: 0;
     font-family: 'Times New Roman';
     font-weight: 400;
     font-size: 32px;
-    line-height: calc(37/32);
-    }
+    line-height: calc(37 / 32);
+  }
 }
 
 .brend-logo {
-    padding-left: 15px;
-    text-decoration: none;
-    margin-top: 8px;
-    font-family: Mimino;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: calc(43 / 40);
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--section-title-color);
-    @media screen and (min-width: 1024px) {
+  padding-left: 15px;
+  text-decoration: none;
+  margin-top: 8px;
+  font-family: Mimino;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: calc(43 / 40);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--section-title-color);
+  @media screen and (min-width: 1024px) {
     padding-left: 0;
     font-size: 64px;
-    line-height: calc(69/64);
-    }
+    line-height: calc(69 / 64);
+  }
 }
 
 .room-type {
-    margin-top: 32px;
-    padding-left: 15px;
-    font-family: "Times New Roman";
-    font-weight: 700;
-    font-size: 24px;
-    line-height: calc(28 / 24);
-    letter-spacing: 0.05em;
-    color: var(--black-color-room);
-    @media screen and (min-width: 1024px) {
+  margin-top: 32px;
+  padding-left: 15px;
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.05em;
+  color: var(--black-color-room);
+  @media screen and (min-width: 1024px) {
     margin-top: 62px;
     padding-left: 0;
     font-size: 30px;
-    line-height: calc(34/30);
-    }
-    @media screen and (min-width: 1280px) {
+    line-height: calc(34 / 30);
+  }
+  @media screen and (min-width: 1280px) {
     margin-top: 72px;
     font-weight: 700;
     font-size: 36px;
-    line-height: calc(41/36);
-    }
+    line-height: calc(41 / 36);
+  }
 }
 
 .room-type__count {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .room-type__description {
-    margin-top: 12px;
-    padding-left: 15px;
-    width: 258px;
-    font-family: "Montserrat";
-    font-weight: 600;
-    font-size: 12px;
-    line-height: calc(15 / 12);
-    letter-spacing: 0.02em;
-    color: var(--text-secondary-color);
-    @media screen and (min-width: 1024px) {
+  margin-top: 12px;
+  padding-left: 15px;
+  width: 258px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.02em;
+  color: var(--text-secondary-color);
+  @media screen and (min-width: 1024px) {
     margin-top: 16px;
     width: 400px;
     padding-left: 0;
     font-size: 16px;
     line-height: calc(20 / 16);
-    }
-    @media screen and (min-width: 1280px) {
-    margin-top: 24px;    
-    }
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 24px;
+  }
 }
 .room-type__photo {
-display: flex;
-justify-content: end;
-margin-top: 32px;
-padding-right: 15px;
-border-radius: 2px;
-@media screen and (min-width: 1024px){
-position: absolute;
-padding-right: 0;
-margin-top: 0px;
-top: -32px;
-right: 112px;
-}
-@media screen and (min-width: 1280px) {
-top: -33px;
-right: 170px;
-}
+  display: flex;
+  justify-content: end;
+  margin-top: 32px;
+  padding-right: 15px;
+  border-radius: 2px;
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    padding-right: 0;
+    margin-top: 0px;
+    top: -32px;
+    right: 112px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: -33px;
+    right: 170px;
+  }
 }
 .room-type__bedroom {
-border-radius: 2px;
--webkit-box-shadow: 0px 0px 58px -7px rgba(0, 0, 0, 0.52);
--moz-box-shadow: 0px 0px 58px -7px rgba(0, 0, 0, 0.52);
-box-shadow: 0px 0px 58px -7px rgba(0, 0, 0, 0.52);
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 0px 58px -7px rgba(0, 0, 0, 0.52);
+  -moz-box-shadow: 0px 0px 58px -7px rgba(0, 0, 0, 0.52);
+  box-shadow: 0px 0px 58px -7px rgba(0, 0, 0, 0.52);
 }
 .room-gallery {
-display: flex;
-margin-top: 32px;
-@media screen and (min-width: 1024px) {
-margin-top: 176px;
-max-width: 428px;
-}
-@media screen and (min-width: 1280px) {
-max-width: 548px;
-margin-top: 188px;    
-}
-&:first-child {
-margin-left: 0px;
-}
+  display: flex;
+  margin-top: 32px;
+  @media screen and (min-width: 1024px) {
+    margin-top: 176px;
+    max-width: 428px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 548px;
+    margin-top: 188px;
+  }
+  &:first-child {
+    margin-left: 0px;
+  }
 }
 .room-gallery-mirror {
-    display: flex;
-    margin-top: 32px;
+  display: flex;
+  margin-top: 32px;
 
-    @media screen and (min-width: 1024px) {
-        margin-top: 176px;
-        max-width: 428px;
-    }
+  @media screen and (min-width: 1024px) {
+    margin-top: 176px;
+    max-width: 428px;
+  }
 
-    @media screen and (min-width: 1280px) {
-        max-width: 548px;
-        margin-top: 188px;
-    }
+  @media screen and (min-width: 1280px) {
+    max-width: 548px;
+    margin-top: 188px;
+  }
 
-    &:first-child {
-        margin-left: 0px;
-    }
+  &:first-child {
+    margin-left: 0px;
+  }
 }
 .slick-item {
-margin-left: 16px;
-@media screen and (min-width: 1024px) {
-margin-left: 40px;    
-}
+  margin-left: 16px;
+  @media screen and (min-width: 1024px) {
+    margin-left: 40px;
+  }
 }
 .button-box-main {
-@media screen and (min-width: 1024px) {
-position: absolute;
-top: 581px;
-right: 47px;
-}
-@media screen and (min-width: 1280px) {
-top: 676px;
-right: 85px;    
-}
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    top: 581px;
+    right: 47px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 676px;
+    right: 85px;
+  }
 }
 .button-box-reverse {
-@media screen and (min-width: 1024px) {
-position: absolute;
-top: 581px;    
-}
-@media screen and (min-width: 1280px) {
-top: 676px;
-left: 85px;    
-}
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    top: 581px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 676px;
+    left: 85px;
+  }
 }
 .button-about {
-display: flex;
-align-items: center;
-justify-content: center;
-margin-left: auto;
-margin-right: auto;
-margin-top: 72px;
-width: 236px;
-height: 48px;
-font-family: 'Montserrat';
-font-weight: 700;
-font-size: 16px;
-line-height: calc(20 / 16);
-letter-spacing: 0.02em;
-border-radius: 25px;
-border: 2px solid var(--backgroung-section);
-background-color: var(--black-color-room);
-color: var(--border-button-room);
-@media screen and (min-width: 1024px) {
-margin-top: 0;    
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 72px;
+  width: 236px;
+  height: 48px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  border-radius: 25px;
+  border: 2px solid var(--backgroung-section);
+  background-color: var(--black-color-room);
+  color: var(--border-button-room);
+  @media screen and (min-width: 1024px) {
+    margin-top: 0;
+  }
 
-&:hover, &:focus {
-background-color: var(--main-white);
-border: 2px solid var(--border-button-room);
-}
+  &:hover,
+  &:focus {
+    background-color: var(--main-white);
+    border: 2px solid var(--border-button-room);
+  }
 }
 .button-prices {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 16px;
-    width: 236px;
-    height: 48px;
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(20 / 16);
-    letter-spacing: 0.02em;
-    border-radius: 25px;
-    border: 2px solid --backgroung-section;
-    background-color: var(--black-color-room);
-    color: var(--border-button-room);
-    &:hover,
-        &:focus {
-            background-color: var(--main-white);
-            border: 2px solid var(--border-button-room);
-        }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+  width: 236px;
+  height: 48px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  border-radius: 25px;
+  border: 2px solid --backgroung-section;
+  background-color: var(--black-color-room);
+  color: var(--border-button-room);
+  &:hover,
+  &:focus {
+    background-color: var(--main-white);
+    border: 2px solid var(--border-button-room);
+  }
 }
 .section-reverse {
-position: relative;
-padding-top: 32px;
-background-color: var(--section-reverse-background-color);
-padding-bottom: 32px;
-width: 100%;
-@media screen and (min-width: 1024px) {
-        padding-left: 47px;
-            padding-right: 47px;
-            padding-top: 66px;
-            padding-bottom: 104px;
-    }
-        @media screen and (min-width: 1280px) {
-            padding-left: 85px;
-            padding-right: 85px;
-            padding-top: 72px;
-            padding-bottom: 112px;
-        }
+  position: relative;
+  padding-top: 32px;
+  background-color: var(--section-reverse-background-color);
+  padding-bottom: 32px;
+  width: 100%;
+  @media screen and (min-width: 1024px) {
+    padding-left: 47px;
+    padding-right: 47px;
+    padding-top: 66px;
+    padding-bottom: 104px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 85px;
+    padding-right: 85px;
+    padding-top: 72px;
+    padding-bottom: 112px;
+  }
 }
 .brend-text--reverse {
-    display: block;
-    text-align: end;
-    padding-right: 15px;
-    @media screen and (min-width: 1024px) {
-    padding-right: 17px;    
-    }
-        @media screen and (min-width: 1280px) {
-            padding-right: 57px;
-        }
+  display: block;
+  text-align: end;
+  padding-right: 15px;
+  @media screen and (min-width: 1024px) {
+    padding-right: 17px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-right: 57px;
+  }
 }
 .brend-logo--reverse {
-    display: block;
-    text-align: end;
-    padding-left: 0;
-    padding-right: 3px;
-    @media screen and (min-width: 1024px) {
-    padding-right: 0;    
-    }
-        @media screen and (min-width: 1280px) {
-            padding-right: 40px;
-        }
+  display: block;
+  text-align: end;
+  padding-left: 0;
+  padding-right: 3px;
+  @media screen and (min-width: 1024px) {
+    padding-right: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-right: 40px;
+  }
 }
 .room-type--reverse {
- text-align: end;
- display: block;
- padding-right: 15px;
- @media screen and (min-width: 1024px) {
- padding-right: 43px;   
- }
- @media screen and (min-width: 1280px) {
- padding-right: 57px;
- }
+  text-align: end;
+  display: block;
+  padding-right: 15px;
+  @media screen and (min-width: 1024px) {
+    padding-right: 43px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-right: 57px;
+  }
 }
 .room-type__box-reverse {
-display: flex;
-padding-left: 98px;
-@media screen and (min-width: 1024px) {
-padding-left: 510px;    
-}
-@media  screen and (min-width: 1280px) {
-padding-left: 600px;    
-}
+  display: flex;
+  padding-left: 98px;
+  @media screen and (min-width: 1024px) {
+    padding-left: 510px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 600px;
+  }
 }
 .room-type__description--reverse {
-padding-left: 0;
+  padding-left: 0;
 }
 .room-type__photo--reverse {
-padding-left: 15px;
-padding-right: 0;
-justify-content: start;
-@media screen and (min-width: 1024px) {
-left: 112px;
-padding-left: 0;    
-}
-@media screen and (min-width: 1280px) {
-left: 170px;    
-}
+  padding-left: 15px;
+  padding-right: 0;
+  justify-content: start;
+  @media screen and (min-width: 1024px) {
+    left: 112px;
+    padding-left: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    left: 170px;
+  }
 }
 // gallery rooms
 .room-gallery {
-width: 284px;
-@media screen and (min-width: 1024px) {
-width: 428px;    
-}
-@media screen and (min-width: 1280px) {
-width: 584px;    
-}
+  width: 284px;
+  @media screen and (min-width: 1024px) {
+    width: 428px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 584px;
+  }
 }
 .room-gallery-mirror {
-width: 284px;
-@media screen and (min-width: 1024px) {
-        width: 428px;
-    }
+  width: 284px;
+  @media screen and (min-width: 1024px) {
+    width: 428px;
+  }
 
-    @media screen and (min-width: 1280px) {
-        width: 584px;
-    }
+  @media screen and (min-width: 1280px) {
+    width: 584px;
+  }
 }
 .room-gallery-reverse {
-display: flex;
-justify-content: end;
-width: 100%;
+  display: flex;
+  justify-content: end;
+  width: 100%;
 }
 .my-slick-prev-hotel {
-position: absolute;
-width: 32px;
-height: 32px;
-left: 16px;
-top: 221px;
-background-image: url(../images/cil_arrow-left-hotel.svg);
-border: none;
-color: #0000;
-background-size: cover;
-background-color: #0000;
-cursor: pointer;
-@media screen and (min-width: 1024px) {
-top: 234px;
-left: 334px;    
-}
-@media screen and (min-width: 1280px) {
-top: 295px;
-left: 459px;
-}
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 16px;
+  top: 221px;
+  background-image: url(../images/cil_arrow-left-hotel.svg);
+  border: none;
+  color: #0000;
+  background-size: cover;
+  background-color: #0000;
+  cursor: pointer;
+  @media screen and (min-width: 1024px) {
+    top: 234px;
+    left: 334px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 295px;
+    left: 459px;
+  }
 }
 .my-slick-next-hotel {
-position: absolute;
-width: 32px;
-height: 32px;
-right: 170px;
-top: 221px;
-background-image: url(../images/cil_arrow-right-hotel.svg);
-border: none;
-color: #0000;
-background-size: cover;
-background-color: #0000;
-cursor: pointer;
-@media screen and (min-width: 1024px) {
-        top: 234px;
-        right: 0;
-    }
-        @media screen and (min-width: 1280px) {
-            top: 295px;
-        }
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  right: 170px;
+  top: 221px;
+  background-image: url(../images/cil_arrow-right-hotel.svg);
+  border: none;
+  color: #0000;
+  background-size: cover;
+  background-color: #0000;
+  cursor: pointer;
+  @media screen and (min-width: 1024px) {
+    top: 234px;
+    right: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 295px;
+  }
 }
 .my-slick-prev-hotel-reverse {
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    left: 167px;
-    top: 221px;
-    background-image: url(../images/cil_arrow-left-hotel.svg);
-    border: none;
-    color: #0000;
-    background-size: cover;
-    background-color: #0000;
-    cursor: pointer;
-    @media screen and (min-width: 1024px) {
-        top: 234px;
-        left: 0;
-    }
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 167px;
+  top: 221px;
+  background-image: url(../images/cil_arrow-left-hotel.svg);
+  border: none;
+  color: #0000;
+  background-size: cover;
+  background-color: #0000;
+  cursor: pointer;
+  @media screen and (min-width: 1024px) {
+    top: 234px;
+    left: 0;
+  }
 
-    @media screen and (min-width: 1280px) {
-        top: 295px;
-        left: 0;
-    }
+  @media screen and (min-width: 1280px) {
+    top: 295px;
+    left: 0;
+  }
 }
 
 .my-slick-next-hotel-reverse {
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    right: 18px;
-    top: 221px;
-    background-image: url(../images/cil_arrow-right-hotel.svg);
-    border: none;
-    color: #0000;
-    background-size: cover;
-    background-color: #0000;
-    cursor: pointer;
-    @media screen and (min-width: 1024px) {
-        top: 234px;
-        right: 334px;
-    }
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  right: 18px;
+  top: 221px;
+  background-image: url(../images/cil_arrow-right-hotel.svg);
+  border: none;
+  color: #0000;
+  background-size: cover;
+  background-color: #0000;
+  cursor: pointer;
+  @media screen and (min-width: 1024px) {
+    top: 234px;
+    right: 334px;
+  }
 
-    @media screen and (min-width: 1280px) {
-        top: 295px;
-        right: 459px;
-    }
+  @media screen and (min-width: 1280px) {
+    top: 295px;
+    right: 459px;
+  }
 }

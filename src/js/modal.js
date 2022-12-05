@@ -1,6 +1,7 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('.hero__btn'),
+    openModalBtn: document.querySelector('.open-modal-book-room-button'),
+    openModalBtn2: document.querySelector('.homepage-hotel__button'),
     closeModalBtn: document.querySelector('.close-modal-button'),
     modal: document.querySelector('.modal-book-room__backdrop'),
     body: document.querySelector("body"),
@@ -8,6 +9,7 @@
 
   refs.openModalBtn.addEventListener("click", toggleModal);
   refs.closeModalBtn.addEventListener("click", toggleModal);
+  refs.openModalBtn2.addEventListener("click", toggleModal);
 
   function toggleModal() {
     refs.modal.classList.toggle("is-hidden");
@@ -15,7 +17,3 @@
     
   }
 })();
-
-
-
-
