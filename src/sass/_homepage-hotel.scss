@@ -166,9 +166,8 @@
   }
 
   @media (min-width: 1280px) {
-    padding-bottom: 118px;
-    margin-left: 51px;
-    max-width: 710px;
+      margin-left: 52px;
+    max-width: 870px;
   }
 
 }
@@ -181,7 +180,7 @@
   }
   @media (min-width: 1280px) {
     margin-left: 34px;
-    margin-right: 0;
+    margin-right: auto;
   }
 }
 
@@ -190,8 +189,8 @@
   width: 245px;
 
   @media (min-width: 1024px) {
-    height: 245px;
-    width: 245px;
+    height: 270px;
+    width: 270px;
   }
 }
 
@@ -203,7 +202,7 @@ object-fit: cover;
 .slick-next-rest-detail {
   width: 32px;
   height: 32px;
-  fill: var(--main-white);
+  background-color: #0000;
   cursor: pointer;
    border: none;
   padding: 0;
