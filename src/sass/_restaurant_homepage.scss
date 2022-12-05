@@ -91,12 +91,9 @@
 
 .rest-slider {
   display: flex;
-//   margin-top: 32px;
-//   width: 720px;
-//   margin-bottom: 50px;
+
 
   @media screen and (min-width: 1024px) {
-    // margin-top: 176px;
     min-width: 428px;
   }
 }
