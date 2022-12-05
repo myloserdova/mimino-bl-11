@@ -25,6 +25,8 @@
   </head>
   <body>
     <!--VasilenkoYurii-->
+    <include src="./partials/header.html"></include>
+
     <include src="./partials/hero-restaurant.html"></include>
     <!--EigenijK-->
     <include src="./partials/restaurant-main-section.html"></include>
@@ -43,9 +45,20 @@
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
     <script
-    type="text/javascript"
-    src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-  ></script>
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
 
+    <script>
+      window.addEventListener('scroll', function () {
+        const header = document.querySelector('header');
+
+        if (window.scrollY > 1) {
+          header.classList.add('sticky');
+        } else {
+          header.classList.remove('sticky');
+        }
+      });
+    </script>
   </body>
 </html>
