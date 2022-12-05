@@ -1,4 +1,4 @@
-<div class="backdrop-price">
+<div class="backdrop-price modal-price__backdrop is-hidden">
   <div class="modal-price">
     <button class="close-modal-button" type="button">
       <svg class="close-modal-button__icon" width="24" height="24">
@@ -7,17 +7,13 @@
     </button>
     <h2 class="modal-price__title">Ціни на номер</h2>
     <form class="modal-price__form">
-      <div class="modal-price__container">
-        <div class="modal-price__wrap">
-          <select class="js-choice" name="room-category" id="room-category">
-            <option value="lux-room" selected>Двомісний люкс</option>
-            <option value="2-pesron-room">Двомісний номер</option>
-            <option value="3-person-room">Трьохмісний номер</option>
-          </select>
-          <label class="modal-price__label" for="room-category"
-            >Категорія номеру</label
+        <div class="modal-price__wrap-type">
+          <p class="modal-price__room-type">Двомісний люкс</p>
+          <p class="modal-price__label"
+            >Категорія номеру</p
           >
         </div>
+        <div class="modal-price__container">
         <div class="modal-price__wrap">
           <input
             class="modal-price__input"
@@ -31,7 +27,7 @@
         </div>
         <div class="modal-price__wrap">
           <div class="modal-price__input" type="number" id="price">
-            <p class="">1000</p>
+            <p>1000</p>
           </div>
           <label class="modal-price__label" for="price">грн</label>
         </div>
