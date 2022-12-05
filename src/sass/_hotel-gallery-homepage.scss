@@ -84,7 +84,7 @@
         }
       }
     }
-    .hotel-room {
+    .hotel__room {
       @media (min-width: 1024px) {
         position: relative;
         top: -25px;
@@ -163,9 +163,14 @@
       padding-bottom: 0;
     }
     .gallery-hotel {
-      margin-left: -155px;
+      margin-left: 0px;
+      max-width: 548px;
+      margin-top: 188px;
       margin-top: 32px;
       margin-bottom: 50px;
+      @media screen and (min-width: 414px) {
+        margin-left: -155px;
+      }
       @media screen and (min-width: 1024px) {
         margin-top: 176px;
         margin-bottom: 0;
@@ -178,7 +183,7 @@
         max-width: 548px;
         margin-top: 188px;
       }
-      .slick-item {
+      .slick__item {
         margin-left: 25px;
         @media screen and (min-width: 1024px) {
           margin-left: 22px;
@@ -186,7 +191,7 @@
         @media screen and (min-width: 1280px) {
           margin-left: 32px;
         }
-        .gallery-slick-box{
+        .gallery__slick-box{
           width: 245px;
           @media screen and (min-width: 1024px) {
             width: 194px;
