@@ -51,16 +51,15 @@
 
       <div class="modal-book-room__control">
         <div class="modal-book-room__wrap">
-          <label class="modal-book-room__label" for="date-in"
-            ><div class="modal-book-room__date-input-wrap">
-              <input
-                class="modal-book-room__input modal-book-room__input--date-input"
-                type="date"
-                name="date-in"
-                id="date-in"
-                placeholder="Сьогодні"
-              />
-              <!-- <span class="modal-book-room__date-input-overlay">
+          <div class="modal-book-room__date-input-wrap">
+            <input
+              class="modal-book-room__input modal-book-room__input--date-input"
+              type="date"
+              name="date-in"
+              id="date-in"
+              required
+            />
+            <!-- <span class="modal-book-room__date-input-overlay">
                 <svg
                   class="modal-book-room__date-input-icon"
                   width="24"
@@ -69,21 +68,23 @@
                   <use href="./images/symbol-defs.svg#icon-arrow-down"></use>
                 </svg>
               </span> -->
-            </div>
+          </div>
+
+          <label class="modal-book-room__label" for="date-in">
             Дата заїзду</label
           >
         </div>
 
         <div class="modal-book-room__wrap">
-          <label class="modal-book-room__label" for="date-out"
-            ><div class="modal-book-room__date-input-wrap">
-              <input
-                class="modal-book-room__input modal-book-room__input--date-input"
-                type="date"
-                name="date-out"
-                id="date-out"
-              />
-              <!-- <span class="modal-book-room__date-input-overlay"
+          <div class="modal-book-room__date-input-wrap">
+            <input
+              class="modal-book-room__input modal-book-room__input--date-input"
+              type="date"
+              name="date-out"
+              id="date-out"
+              required
+            />
+            <!-- <span class="modal-book-room__date-input-overlay"
                 ><svg
                   class="modal-book-room__date-input-icon"
                   width="24"
@@ -92,8 +93,10 @@
                   <use href="./images/symbol-defs.svg#icon-arrow-down"></use>
                 </svg>
               </span> -->
-            </div>
-            Дата виїзду</label
+          </div>
+
+          <label class="modal-book-room__label" for="date-out"
+            >Дата виїзду</label
           >
         </div>
       </div>

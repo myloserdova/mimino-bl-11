@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>MIMIHO Roompage</title>
+    <link rel="shortcut icon" href="./favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,6 +28,8 @@
   </head>
   <body>
     <!--VasilenkoYurii-->
+    <include src="./partials/header.html"></include>
+
     <include src="./partials/hero-room.html"></include>
 
     <!--BudnaElvira-->
@@ -34,6 +37,20 @@
 
     <!--Liudmyla_Kozytska-->
     <include src="./partials/footer.html"></include>
+
+    <!-- IvanPanteliuk -->
+    <include src="./partials/modal-book-room.html"></include>
+    <include src="./partials/modal-price.html"></include>
+
+    <script src="./js/modal-price.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+    <script src="./js/turn-on-choices.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/imask/6.4.3/imask.min.js"
+      integrity="sha512-yJ3vm1HmQtcgeMtbUYCp7PuTLyjU+ffCnVNTuE1Uccv1BmkoaJIXt1EjBVGnscjCILc62hTJJJ2rJJBTcw8RjQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <script
       type="text/javascript"
@@ -47,5 +64,17 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+
+    <script>
+      window.addEventListener('scroll', function () {
+        const header = document.querySelector('header');
+
+        if (window.scrollY > 1) {
+          header.classList.add('sticky');
+        } else {
+          header.classList.remove('sticky');
+        }
+      });
+    </script>
   </body>
 </html>

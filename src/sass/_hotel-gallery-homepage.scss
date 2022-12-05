@@ -1,6 +1,15 @@
 .gallery {
   padding-bottom: 160px;
-  background-color: var(--backgroung-section);
+  background-color: var(--background-section);
+
+  background-image: url(../images/lines-mobile.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: 1024px) {
+    background-image: url(../images/three-lines.png);
+  }
   .gallery-bedroom-container {
     margin-bottom: 32px;
     flex-direction: column;
@@ -10,7 +19,7 @@
       flex-direction: row-reverse;
       margin-bottom: 0;
     }
-    
+
     .gallery-bedroom {
       margin-bottom: 28px;
       @media (min-width: 1024px) {
@@ -33,10 +42,8 @@
           font-size: 32px;
           line-height: 37px;
         }
-        
       }
       .logo__gallery {
-
         font-family: 'Mimino';
         font-style: normal;
         font-weight: 700;
@@ -64,13 +71,13 @@
         letter-spacing: 0.02em;
         color: var(--text-secondary-color);
         padding-left: 90px;
-        @media(min-width: 1024px) {
+        @media (min-width: 1024px) {
           width: 419px;
           text-align: start;
           font-size: 16px;
           line-height: 20px;
         }
-        @media(min-width: 1280px){
+        @media (min-width: 1280px) {
           width: 488px;
           padding-left: 0;
           text-align: start;
@@ -88,10 +95,9 @@
         left: -73px;
         top: -50px;
       }
-      
     }
   }
-  .gallery-lobby {  
+  .gallery-lobby {
     position: relative;
     top: 0;
     right: 0;
@@ -99,9 +105,9 @@
     justify-content: end;
     align-items: center;
     z-index: 1;
-  @media (min-width: 1280px) {
-    top: -75px;
-    right: 0;
+    @media (min-width: 1280px) {
+      top: -75px;
+      right: 0;
     }
     .lobby__container {
       display: flex;
@@ -109,7 +115,7 @@
       gap: 21px;
       @media (min-width: 1280px) {
         gap: 0;
-        }
+      }
       .gallery__description-lobby {
         color: var(--text-secondary-brown);
         width: 163px;
@@ -136,18 +142,19 @@
           width: 460px;
           margin: 0;
         }
-        .img__lobby-mobile-size{
+        .img__lobby-mobile-size {
           width: 200px;
           @media (min-width: 1024px) {
             width: 350px;
-          }@media (min-width: 1280px) {
+          }
+          @media (min-width: 1280px) {
             width: 460px;
           }
         }
       }
     }
   }
-  .slider__mobile-position{
+  .slider__mobile-position {
     position: relative;
     .gallery-hotel {
       margin-left: -15px;
@@ -195,15 +202,15 @@
     bottom: -55px;
     left: 90px;
   }
-  .img__hotel-gallery-hp{
+  .img__hotel-gallery-hp {
     width: 244px;
     border-radius: 2px;
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
     @media (min-width: 1024px) {
-       width: 400px;
-     }
-     @media (min-width: 1280px) {
-       width: 460px;
-     }
+      width: 400px;
+    }
+    @media (min-width: 1280px) {
+      width: 460px;
+    }
   }
 }
