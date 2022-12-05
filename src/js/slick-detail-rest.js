@@ -8,4 +8,3 @@ $('.two-time').slick({
     adaptiveHeight: true,
     variableWidth: true
   });
-  
