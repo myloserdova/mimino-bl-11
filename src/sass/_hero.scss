@@ -134,6 +134,8 @@
   text-align: center;
   margin: 0 auto;
 
+  background: linear-gradient(#000 0%, #0000008c 54.17%, #0000 100%);
+
   @media screen and (max-width: 413px) {
     width: auto;
   }
@@ -148,6 +150,26 @@
 
   @media screen and (min-width: 1280px) {
     width: 1280px;
+  }
+}
+
+.hero-room__gardient {
+  position: absolute;
+  width: 100%;
+  height: 143px;
+  z-index: 2;
+  background: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.55) 54.17%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  @media screen and (min-width: 1024px) {
+    height: 116px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 147px;
   }
 }
 
@@ -537,23 +559,28 @@
 }
 
 .hero__tittle {
-  font-size: 96px;
-  line-height: calc(103 / 96);
-  font-family: Mimino;
-  font-weight: 700;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: var(--main-white);
   margin-bottom: 24px;
+  transform: translateX(10px);
+
+  font-family: Mimino;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: calc(103 / 96);
+  letter-spacing: 0.3em;
+  color: var(--main-white);
+  text-transform: uppercase;
   text-align: center;
 
-  @media screen and (min-width: 1024px) {
-    font-size: 128px;
-    line-height: calc(137 / 128);
+  @media screen and (min-width: 365px) {
+    font-size: 96px;
+    transform: translateX(15px);
   }
 
-  @media screen and (min-width: 1024px) and (max-width: 1280px) {
+  @media screen and (min-width: 1024px) {
     margin-bottom: 16px;
+    font-size: 128px;
+    line-height: calc(137 / 128);
   }
 
   @media screen and (min-width: 1280px) {
@@ -563,11 +590,15 @@
 
 .hero__name {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   line-height: calc(20 / 16);
   letter-spacing: 0.02em;
   color: var(--main-white);
   margin-bottom: 40px;
+
+  @media screen and (min-width: 365px) {
+    font-size: 16px;
+  }
 
   @media screen and (min-width: 1024px) {
     font-size: 20px;
@@ -597,12 +628,16 @@
 
 .hero__slogan {
   font-family: Times;
-  font-size: 32px;
+  font-size: 28px;
   line-height: calc(37 / 32);
   font-weight: 700;
   letter-spacing: 0.05em;
   color: var(--main-white);
   text-transform: uppercase;
+
+  @media screen and (min-width: 365px) {
+    font-size: 32px;
+  }
 
   @media screen and (max-width: 1023px) {
     margin-bottom: 113px;
@@ -632,7 +667,13 @@
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 1023px) {
+  @media screen and (max-width: 414px) {
+    position: absolute;
+    top: 70;
+    right: 15px;
+  }
+
+  @media screen and (min-width: 414px) and (max-width: 1023px) {
     position: absolute;
     top: 64;
     right: 15px;
@@ -697,8 +738,12 @@
 .hero__btn-room {
   position: absolute;
   bottom: 40px;
-  right: 73px;
+  right: 30px;
   padding: 14px 35px;
+
+  @media screen and (min-width: 380px) {
+    right: 73px;
+  }
 
   @media screen and (min-width: 1024px) {
     bottom: 64px;
@@ -813,7 +858,15 @@
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 1023px) {
+  z-index: 2;
+
+  @media screen and (max-width: 380px) {
+    position: absolute;
+    top: 70px;
+    right: 15px;
+  }
+
+  @media screen and (min-width: 380px) and (max-width: 1023px) {
     position: absolute;
     top: 64px;
     right: 15px;
@@ -845,12 +898,16 @@
 
   text-align: left;
 
-  width: 326px;
+  width: 300px;
   height: 61px;
 
   position: absolute;
   bottom: 118px;
   left: 15px;
+
+  @media screen and (min-width: 380px) {
+    width: 326px;
+  }
 
   @media screen and (min-width: 1024px) {
     font-size: 16px;
