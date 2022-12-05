@@ -18,6 +18,7 @@
     overflow-y: scroll;
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 999;
 
 }
 
@@ -30,7 +31,6 @@
     
 
     transform: translate(-50%) scale(1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     overflow: auto;
     background-color: var(--background-section);
     border-radius: 2px;
@@ -108,7 +108,8 @@
     &:focus {
         background-color: var(--border-button-room);
         color: var(--black-color-room);
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        @include animation__color;
+        @include animation__bg-color;
         cursor: pointer;
     }
 
@@ -140,7 +141,8 @@
     &:focus-within {
         outline: none;
         border-color: var(--border-button-room);
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        @include animation__border;
+        @include animation__bg-color;
         cursor: pointer;
     }
 
@@ -166,7 +168,7 @@
     &:hover,
     &:focus {
     border-color: var(--border-button-room);
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include animation__border;
     cursor: pointer;
     }
 }

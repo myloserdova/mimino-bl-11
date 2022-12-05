@@ -202,3 +202,18 @@ img {
 .is-scroll-disabled {
   overflow: hidden;
 }
+
+@mixin animation__border {
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin animation__color {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin animation__bg-color {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@mixin animation__fill {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
