@@ -112,6 +112,14 @@
   }
 }
 
+.nav__link--hov {
+  &:hover,
+  &:focus {
+    color: var(--text-secondary-brown);
+    @include animation__color;
+  }
+}
+
 .nav__icon {
   margin-right: 0;
   fill: #f3c653;
@@ -149,4 +157,10 @@
 
 .social__icon {
   fill: #f3c653;
+
+  &:hover,
+  &:focus {
+    fill: var(--text-secondary-brown);
+    @include animation__fill;
+  }
 }
