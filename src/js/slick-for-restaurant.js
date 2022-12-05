@@ -4,7 +4,7 @@ $('.rest-slider').slick({
     nextArrow: '<button type="button" class="my-slick-next-restaurant"></button>',
     infinite: true,
     speed: 300,
-    slidesToShow: 2,
+    slidesToShow: 2.4,
     adaptiveHeight: true,
     variableWidth: true,
 });
