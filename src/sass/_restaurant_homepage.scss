@@ -6,7 +6,7 @@
   position: relative;
 
   @media (min-width: 1024px) {
-    padding: 48px 0;
+    padding: 48px 0 96px;
   }
 
   @media screen and (max-width: 1023px) {
@@ -47,9 +47,9 @@
 }
 
 .homepage-restaurant__name {
-  padding-left: 15px;
+//   padding-left: 15px;
   text-decoration: none;
-  margin-top: 8px;
+//   margin-top: 8px;
   margin-bottom: 12px;
   font-family: Mimino;
   font-weight: 700;
@@ -60,9 +60,10 @@
   color: var(--main-white);
 
   @media screen and (min-width: 1024px) {
-    padding-left: 0;
+    // padding-left: 0;
     font-size: 64px;
     line-height: calc(69 / 64);
+    margin-bottom: 16px;
   }
 }
 
@@ -73,6 +74,10 @@
   letter-spacing: 0.02em;
   color: var(--main-white);
   margin-bottom: 20px;
+
+@media screen and (min-width: 1024px) {
+        margin-bottom: 8px;
+    }
 }
 
 .homepage-restauran__text {
@@ -86,12 +91,12 @@
 
 .rest-slider {
   display: flex;
-  margin-top: 32px;
+//   margin-top: 32px;
 //   width: 720px;
-  margin-bottom: 50px;
+//   margin-bottom: 50px;
 
   @media screen and (min-width: 1024px) {
-    margin-top: 176px;
+    // margin-top: 176px;
     min-width: 428px;
   }
 }
@@ -111,12 +116,19 @@
     left: 0;
     bottom: -32px;
     background-image: url(../images/cil_arrow-left-hotel-white.svg);
+    
+    @media screen and (min-width: 1024px) {
+            bottom: -56px;
+        }
 }
 
 .homepage-restaurant .my-slick-next-rest{
     left: 64px;
     bottom: -32px;
     background-image: url(../images/cil_arrow-right-hotel-white.svg);
+    @media screen and (min-width: 1024px) {
+            bottom: -56px;
+        }
 }
 
 .my-slick-prev-restaurant,
@@ -223,3 +235,35 @@ background-color:var(--yellow);
 color:var(--black-color-room);
 }
 
+
+.homepage-restaurant__wrapper{
+    @media  screen and (min-width:1024px) {
+        display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+    
+
+.homepage-restaurant__box{
+    @media screen and (min-width:1024px) {
+            width: 696px;
+        }
+  
+}
+
+.button-container{
+    @media screen and (min-width:1024px) {
+            margin-top: auto;
+        }
+}
+
+.rest-menu{
+    margin-top: 32px;
+    margin-bottom: 50px;
+
+    @media screen and (min-width:1024px) {
+            margin-top: 40px;
+            margin-bottom: 0;
+            padding-left: 34px;
+        }
+}
