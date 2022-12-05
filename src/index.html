@@ -26,31 +26,58 @@
 
   <body>
     <!--VasilenkoYurii-->
+    <include src="./partials/header.html"></include>
+
     <include src="./partials/hero-homepage.html"></include>
     <!--InnaPokydko Restaurant-->
     <include src="./partials/rest-homepage.html"></include>
-
     <!-- annabusaga Homepage__restaurant-->
     <include src="./partials/restaurant_homepage.html"></include>
-
+    <!-- Viktor Adamovych -->
+    <include src="./partials/hotel-gallery-homepage.html"></include>
     <!-- Oleksandr Klyn -->
     <include src="./partials/homepage-hotel.html"></include>
-    
+
     <!-- Heorhii -->
     <include src="./partials/contacts-map.html"></include>
 
-  <!--Liudmyla_Kozytska-->
-  <include src="./partials/footer.html"></include>
-  <!--Liudmyla_Kozytska-->
-  <include src="./partials/book-table-modal.html"></include>
+    <!--Liudmyla_Kozytska-->
+    <include src="./partials/footer.html"></include>
+    <!--Liudmyla_Kozytska-->
+    <include src="./partials/book-table-modal.html"></include>
 
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"></script>
-</body>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.addEventListener('scroll', function () {
+        const header = document.querySelector('header');
 
+        if (window.scrollY > 1) {
+          header.classList.add('sticky');
+        } else {
+          header.classList.remove('sticky');
+        }
+      });
+    </script>
+  </body>
 </html>
