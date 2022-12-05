@@ -1,12 +1,14 @@
 .rest-home {
-    background-color: var(--background-section);
+  background-color: var(--background-section);
   margin: 0;
+
+  background-image: url(../images/lines-mobile.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   @media screen and (min-width: 1024px) {
     background-image: url(../images/three-lines.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
   }
 }
 
@@ -19,7 +21,7 @@
   @media (min-width: 1280px) {
     padding: 120px 85px 30px 85px;
     width: 1280px;
-margin: 0 auto; 
+    margin: 0 auto;
   }
 }
 
@@ -71,7 +73,7 @@ margin: 0 auto;
 }
 
 .rest-text_position {
-    @media (min-width: 1024px) {
+  @media (min-width: 1024px) {
     content: '';
     position: absolute;
     top: 190px;
