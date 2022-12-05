@@ -8,3 +8,4 @@ $('.one-time').slick({
   adaptiveHeight: true,
   variableWidth: true
 });
+
