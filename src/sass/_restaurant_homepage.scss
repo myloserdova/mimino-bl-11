@@ -114,20 +114,20 @@
 
 .homepage-restaurant .my-slick-prev-rest{
     left: 0;
-    bottom: -32px;
+    bottom: -48px;
     background-image: url(../images/cil_arrow-left-hotel-white.svg);
     
     @media screen and (min-width: 1024px) {
-            bottom: -56px;
+            top: 286px;
         }
 }
 
 .homepage-restaurant .my-slick-next-rest{
     left: 64px;
-    bottom: -32px;
+    bottom: -48px;
     background-image: url(../images/cil_arrow-right-hotel-white.svg);
     @media screen and (min-width: 1024px) {
-            bottom: -56px;
+            top: 286px;
         }
 }
 
@@ -245,9 +245,16 @@ color:var(--black-color-room);
     
 
 .homepage-restaurant__box{
+    margin-bottom: 80px;
     @media screen and (min-width:1024px) {
             width: 696px;
+            margin-bottom: 0;
         }
+
+                 @media screen and (min-width:1280px) {
+                     width: 888px;
+                 }
+
   
 }
 
@@ -259,11 +266,11 @@ color:var(--black-color-room);
 
 .rest-menu{
     margin-top: 32px;
-    margin-bottom: 50px;
+    
 
     @media screen and (min-width:1024px) {
             margin-top: 40px;
-            margin-bottom: 0;
+            
             padding-left: 34px;
         }
 }
