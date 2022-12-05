@@ -10,8 +10,15 @@
           veniam consequat sunt nostrud amet.
         </p>
       </div>
-      <div class="hotel-room">
+      <div class="hotel__room">
         <picture>
+          <source
+          media="(max-width: 1023px)"
+          srcset="
+            ./images/modern-studio-mb.jpg    1x,
+            ./images/modern-studio-mb@2x.jpg 2x
+          "
+        />
           <source
             media="(min-width: 1024px)"
             srcset="
@@ -44,6 +51,13 @@
         <div class="img-size__lobby">
           <picture>
             <source
+            media="(max-width: 1023px)"
+            srcset="
+              ./images/hotel-lobby-mb.jpg    1x,
+              ./images/hotel-lobby-mb@2x.jpg 2x
+            "
+          />
+            <source
               media="(min-width: 1024px)"
               srcset="
                 ./images/hotel-lobby-tb.jpg    1x,
@@ -68,8 +82,8 @@
     </div>
     <div class="slider__mobile-position">
       <ul class="gallery-hotel">
-        <li class="slick-item">
-          <div class="slick-box">
+        <li class="slick__item">
+          <div class="gallery__slick-box">
             <picture>
               <source
                 srcset="
@@ -81,8 +95,8 @@
               />
               <source
                 srcset="
-                  ./images/white-towel-bedroom.jpg    1x,
-                  ./images/white-towel-bedroom@2x.jpg 2x
+                  ./images/white-towel-bedroom-tb.jpg    1x,
+                  ./images/white-towel-bedroom-tb@2x.jpg 2x
                 "
                 type="image/jpeg"
                 media="(max-width: 1279px)"
@@ -103,66 +117,81 @@
             </picture>
           </div>
         </li>
-        <li class="slick-item">
-          <picture>
-            <source
-              srcset="./images/cup-tea.jpg 1x, ./images/cup-tea@2x.jpg 2x"
-              type="image/jpeg"
-              media="(max-width: 1279px)"
-            />
-            <source
-              srcset="
-                ./images/cup-tea-desk.jpg    1x,
-                ./images/cup-tea-desk@2x.jpg 2x
-              "
-              type="image/jpeg"
-              media="(min-width: 1280px)"
-            />
-            <img src="./images/cup-tea.jpg" alt="чашка кави" width="245px" />
-          </picture>
+        <li class="slick__item">
+          <div class="gallery__slick-box">
+            <picture>
+              <source
+                srcset="./images/cup-tea.jpg 1x, ./images/cup-tea@2x.jpg 2x"
+                type="image/jpeg"
+                media="(max-width: 1279px)"
+              />
+              <source
+                srcset="
+                  ./images/cup-tea-desk.jpg    1x,
+                  ./images/cup-tea-desk@2x.jpg 2x
+                "
+                type="image/jpeg"
+                media="(min-width: 1280px)"
+              />
+              <img src="./images/cup-tea.jpg" alt="чашка кави" width="245px" />
+            </picture>
+          </div>
         </li>
-        <li class="slick-item">
-          <picture>
-            <source
+        <li class="slick__item">
+          <div class="gallery__slick-box">
+            <picture>
+              <source
+
               srcset="
                 ./images/hotel-registration.jpg    1x,
                 ./images/hotel-registration@2x.jpg 2x
               "
               type="image/jpeg"
-              media="(max-width: 1279px)"
-            />
-            <source
-              srcset="
-                ./images/hotel-registration.jpg    1x,
-                ./images/hotel-registration@2x.jpg 2x
-              "
-              type="image/jpeg"
-              media="(min-width: 1280px)"
-            />
-            <img
-              src="./images/hotel-registration.jpg"
-              alt="адміністратор в лоббі"
-              width="245px"
-            />
-          </picture>
+              media="(max-width: 1024px)"
+              />
+              <source
+                srcset="
+                  ./images/hotel-registration-tb.jpg    1x,
+                  ./images/hotel-registration-tb@2x.jpg 2x
+                "
+                type="image/jpeg"
+                media="(max-width: 1279px)"
+              />
+              <source
+                srcset="
+                  ./images/hotel-registration.jpg    1x,
+                  ./images/hotel-registration@2x.jpg 2x
+                "
+                type="image/jpeg"
+                media="(min-width: 1280px)"
+              />
+              <img
+                src="./images/hotel-registration.jpg"
+                alt="адміністратор в лоббі"
+                width="245px"
+              />
+            </picture>
+          </div>
         </li>
-        <li class="slick-item">
-          <picture>
-            <source
-              srcset="./images/cup-tea.jpg 1x, ./images/cup-tea@2x.jpg 2x"
-              type="image/jpeg"
-              media="(max-width: 1279px)"
-            />
-            <source
-              srcset="
-                ./images/cup-tea-desk.jpg    1x,
-                ./images/cup-tea-desk@2x.jpg 2x
-              "
-              type="image/jpeg"
-              media="(min-width: 1280px)"
-            />
-            <img src="./images/cup-tea.jpg" alt="чашка кави" width="245px" />
-          </picture>
+        <li class="slick__item">
+          <div class="gallery__slick-box">
+            <picture>
+              <source
+                srcset="./images/cup-tea.jpg 1x, ./images/cup-tea@2x.jpg 2x"
+                type="image/jpeg"
+                media="(max-width: 1279px)"
+              />
+              <source
+                srcset="
+                  ./images/cup-tea-desk.jpg    1x,
+                  ./images/cup-tea-desk@2x.jpg 2x
+                "
+                type="image/jpeg"
+                media="(min-width: 1280px)"
+              />
+              <img src="./images/cup-tea.jpg" alt="чашка кави" width="245" />
+            </picture>
+          </div>
         </li>
       </ul>
     </div>
