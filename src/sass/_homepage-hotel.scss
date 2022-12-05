@@ -45,8 +45,6 @@
   }
 
   &__wrap {
-    background-color: dimgray;
-
     @media screen and (min-width: 1024px) {
       background-image: url(../images/three-lines.png);
       background-size: cover;
@@ -100,7 +98,7 @@
     letter-spacing: 0.02em;
     color: #b4b4b4;
     width: 243px;
-   
+
     @media (min-width: 1024px) {
       font-size: 16px;
       width: 549px;
@@ -139,6 +137,12 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 1.25;
+    transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: var(--main-white);
+    }
   }
   &__tut-bude-slider {
     height: 398px;
@@ -151,13 +155,14 @@
     }
   }
 }
-
-.homepage-hotel__gallery {
+// tyt to sho vidkat
+.homepage-hotel__img-gallery {
   display: flex;
   justify-content: center;
   margin-right: 40px;
-    padding-bottom: 80px;
-    max-width: 374px;
+  padding-bottom: 80px;
+  max-width: 374px;
+  overflow: hidden;
 
   @media (min-width: 1024px) {
     padding-bottom: 96px;
@@ -166,10 +171,9 @@
   }
 
   @media (min-width: 1280px) {
-      margin-left: 52px;
+    margin-left: 52px;
     max-width: 870px;
   }
-
 }
 
 .homepage-hotel__item {
@@ -195,16 +199,16 @@
 }
 
 .homepage-hotel__img {
-object-fit: cover;
+  object-fit: cover;
 }
 
-.slick-prev-rest-detail,
-.slick-next-rest-detail {
+.slick-prev-rest-detail_s,
+.slick-next-rest-detail_s {
   width: 32px;
   height: 32px;
   background-color: #0000;
   cursor: pointer;
-   border: none;
+  border: none;
   padding: 0;
   transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
@@ -220,8 +224,8 @@ object-fit: cover;
   }
 }
 
-.slick-prev-rest-detail {
-  background-image: url(../images/homepage-hotel/arr-left.svg);
+.slick-prev-rest-detail_s {
+  background-image: url('../images/cil_arrow-left-hotel-white.svg');
   z-index: 3;
   right: 68px;
 
@@ -234,8 +238,8 @@ object-fit: cover;
   }
 }
 
-.slick-next-rest-detail {
-  background-image: url(../images/homepage-hotel/arr-right.svg);
+.slick-next-rest-detail_s {
+  background-image: url('../images/cil_arrow-right-hotel-white.svg');
   z-index: 3;
   right: 8px;
 
@@ -247,3 +251,183 @@ object-fit: cover;
     left: 510px;
   }
 }
+
+// tyt nove
+
+// .rest-slider {
+//   display: flex;
+
+//   @media screen and (min-width: 1024px) {
+//     min-width: 428px;
+//   }
+// }
+
+// .rest-slider__item {
+//   margin-left: 20px;
+
+//   @media screen and (min-width: 1024px) {
+//     margin-left: 34px;
+//   }
+//   @media screen and (min-width: 1280px) {
+//     margin-left: 86px;
+//   }
+// }
+
+// .homepage-restaurant .slick-prev-rest-detail_s {
+//   left: 0;
+//   bottom: -48px;
+//   background-image: url(../images/cil_arrow-left-hotel-white.svg);
+
+//   @media screen and (min-width: 1024px) {
+//     top: 286px;
+//   }
+// }
+
+// .homepage-restaurant .slick-next-rest-detail_s {
+//   left: 64px;
+//   bottom: -48px;
+//   background-image: url(../images/cil_arrow-right-hotel-white.svg);
+//   @media screen and (min-width: 1024px) {
+//     top: 286px;
+//   }
+// }
+
+// .slick-prev-rest-detail_s,
+// .slick-next-rest-detail_s {
+//   position: absolute;
+// }
+
+// .slick-prev-rest-detail_s {
+//   background-image: url(../images/cil_arrow-left-hotel.svg);
+
+//   width: 32px;
+//   height: 32px;
+//   border: none;
+//   color: #0000;
+//   background-size: cover;
+//   background-color: #0000;
+
+//   bottom: -40px;
+//   right: 70px;
+// }
+
+// .slick-next-rest-detail_s {
+//   background-image: url(../images/cil_arrow-right-hotel.svg);
+//   width: 32px;
+//   height: 32px;
+//   border: none;
+//   color: #0000;
+//   background-size: cover;
+//   background-color: #0000;
+
+//   bottom: -40px;
+//   right: 30px;
+// }
+
+// .rest-btn {
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: calc(20 / 16);
+//   letter-spacing: 0.01em;
+
+//   padding: 14px 24px;
+//   color: var(--yellow);
+//   background-color: rgba(0, 0, 0, 0.4);
+//   border: 2px solid;
+//   border-color: var(--main-white);
+//   border-radius: 25px;
+
+//   cursor: pointer;
+
+//   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//   &:hover,
+//   &:focus {
+//     background-color: var(--main-white);
+//   }
+// }
+
+// .homepage-restauran__link {
+//   font-family: 'Montserrat';
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: calc(20 / 16);
+//   letter-spacing: 0.02em;
+//   color: var(--yellow);
+//   width: 236px;
+//   height: 48px;
+//   border: 2px solid #ffffff;
+//   border-radius: 25px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .button-container {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 16px;
+// }
+
+// .homepage-restauran__button {
+//   font-family: 'Montserrat';
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: calc(20 / 16);
+//   letter-spacing: 0.02em;
+//   color: var(--yellow);
+//   width: 236px;
+//   height: 48px;
+//   border: 2px solid #ffffff;
+//   border-radius: 25px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: transparent;
+//   font-family: inherit;
+// }
+
+// .homepage-restauran__button:hover,
+// .homepage-restauran__link:hover,
+// .homepage-restauran__button:focus,
+// .homepage-restauran__link:focus {
+//   background-color: var(--yellow);
+//   color: var(--black-color-room);
+// }
+
+// .homepage-restaurant__wrapper {
+//   @media screen and (min-width: 1024px) {
+//     display: flex;
+//     flex-direction: row-reverse;
+//   }
+// }
+
+// .homepage-restaurant__box {
+//   margin-bottom: 80px;
+//   @media screen and (min-width: 1024px) {
+//     width: 696px;
+//     margin-bottom: 0;
+//   }
+
+//   @media screen and (min-width: 1280px) {
+//     width: 888px;
+//   }
+// }
+
+// .button-container {
+//   @media screen and (min-width: 1024px) {
+//     margin-top: auto;
+//   }
+// }
+
+// .rest-menu {
+//   margin-top: 32px;
+
+//   @media screen and (min-width: 1024px) {
+//     margin-top: 40px;
+
+//     padding-left: 34px;
+//   }
+// }
