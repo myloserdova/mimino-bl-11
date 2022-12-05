@@ -1,0 +1,99 @@
+.rest-main {
+    background-color: var(--backgroung-section);
+  }
+.rest-title {
+  font-family: Mimino;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: calc(43 / 40);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--section-title-color);
+  margin-bottom: 12px;
+
+  @media (min-width: 1024px) {
+    font-size: 64px;
+    line-height: calc(69 / 64);
+    color: var(--section-title-color);
+    margin-bottom: 24px;
+}
+@media (min-width: 1280px) {
+  font-size: 64px;
+  line-height: calc(69 / 64);
+  color: var(--second-section-title-color);
+  margin-bottom: 24px;
+}
+}
+.rest-main__container{
+    position: relative;
+    @media (min-width: 1024px) {
+      padding: 120px 60px 30px 47px;
+     }
+  
+    @media (min-width: 1280px) {
+      padding: 120px 85px 30px 85px;
+    }
+  }
+.restaurant__text {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    max-width: 163px;
+    color: var(--text-secondary-brown);
+    margin-left: 20px;
+    @media screen and (min-width: 1024px) {
+      font-size: 16px;
+      margin-left: 48px;
+      max-width: 312px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-left: 40px;
+    }
+  }
+  .rest-text {
+    @media (min-width: 1024px) {
+      margin-bottom: 142px;
+    }
+  
+    @media (min-width: 1280px) {
+      margin-bottom: 162px;
+    }
+  }
+
+.rest-main__img {
+    margin-bottom: 28px;
+    margin-right: 0;
+    margin-left: auto;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    @media (min-width: 1024px) {
+      content: '';
+      position: absolute;
+      top: -32px;
+      right: 107px;
+    }
+  
+    @media (min-width: 1280px) {
+      right: 180px;
+    }
+  
+}
+.rest-main__img--bg {
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+
+}
+.rest-main__second {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 262px;
+  }
+
+  @media (min-width: 1280px) {
+  }
+}
+
