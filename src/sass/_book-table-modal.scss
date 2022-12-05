@@ -30,7 +30,7 @@
     width: 100%;
     max-width: 414px;
     overflow: auto;
-    background-color: var(--backgroung-section);
+    background-color: var(--background-section);
     border-radius: 2px;
 
     @media screen and (min-width: 1024px) {
@@ -121,7 +121,7 @@
     line-height: calc(23 / 20);
     letter-spacing: 0.05em;
     color: var(--input-text-color);
-    background-color: var(--backgroung-section);
+    background-color: var(--background-section);
 
     &:hover,
     &:focus-within {
@@ -144,7 +144,7 @@
     border: 1px solid var(--text-secondary-brown);
     border-radius: 2px;
     margin-bottom: 8px;
-    background-color: var(--backgroung-section);
+    background-color: var(--background-section);
     position: relative;
 
     &:hover,
