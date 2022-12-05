@@ -24,6 +24,8 @@
   </head>
   <body>
     <!--VasilenkoYurii-->
+    <include src="./partials/header.html"></include>
+
     <include src="./partials/hero-hotel.html"></include>
     <include src="./partials/hotel-rooms.html"></include>
     <!-- IvanPanteliuk modal-book-room -->
@@ -39,6 +41,8 @@
     <script type="module" src="./index.js"></script>
     <!--Liudmyla_Kozytska-->
     <include src="./partials/footer.html"></include>
+    <!--Liudmyla_Kozytska-->
+    <include src="./partials/book-table-modal.html"></include>
     <!-- Heorhii -->
     <script
       type="text/javascript"
@@ -52,5 +56,16 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <script>
+      window.addEventListener('scroll', function () {
+        const header = document.querySelector('header');
+
+        if (window.scrollY > 1) {
+          header.classList.add('sticky');
+        } else {
+          header.classList.remove('sticky');
+        }
+      });
+    </script>
   </body>
 </html>

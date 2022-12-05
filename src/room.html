@@ -27,6 +27,8 @@
   </head>
   <body>
     <!--VasilenkoYurii-->
+    <include src="./partials/header.html"></include>
+
     <include src="./partials/hero-room.html"></include>
 
     <!--BudnaElvira-->
@@ -58,5 +60,17 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+
+    <script>
+      window.addEventListener('scroll', function () {
+        const header = document.querySelector('header');
+
+        if (window.scrollY > 1) {
+          header.classList.add('sticky');
+        } else {
+          header.classList.remove('sticky');
+        }
+      });
+    </script>
   </body>
 </html>

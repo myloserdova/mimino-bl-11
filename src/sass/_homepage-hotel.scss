@@ -46,6 +46,13 @@
 
   &__wrap {
     background-color: dimgray;
+
+    @media screen and (min-width: 1024px) {
+      background-image: url(../images/three-lines.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   }
 
   &__logo {
