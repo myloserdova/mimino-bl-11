@@ -97,7 +97,7 @@
   margin-bottom: 32px;
 
   @media (min-width: 1024px) {
-    margin-bottom: 262px;
+    margin-bottom: 230px;
   }
 }
 
@@ -118,6 +118,7 @@
   @media (min-width: 1024px) {
     position: absolute;
     top: 927px;
+    padding: auto;
   }
 }
 
@@ -135,7 +136,7 @@
 
   @media (min-width: 1280px) {
     padding-bottom: 118px;
-    margin-left: 610px;
+    margin-left: 560px;
     max-width: 548px;
   }
 }
@@ -162,14 +163,13 @@
   }
 
   @media (min-width: 1280px) {
-    height: 245px;
-    width: 245px;
+    height: 254px;
+    width: 254px;
   }
 }
 
 .rest-slick__img {
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.07);
-  border-radius: 2px;
+   border-radius: 2px;
 }
 
 .my-slick-prev-rest,
@@ -200,11 +200,11 @@
   right: 68px;
 
   @media (min-width: 1024px) {
-    left: 340px;
+    left: 330px;
   }
 
   @media (min-width: 1280px) {
-    left: 440px;
+    left: 410px;
   }
 }
 
@@ -214,10 +214,10 @@
   right: 8px;
 
   @media (min-width: 1024px) {
-    left: 400px;
+    left: 390px;
   }
 
   @media (min-width: 1280px) {
-    left: 510px;
+    left: 490px;
   }
 }

@@ -237,3 +237,15 @@ img {
 @mixin animation__fill {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+@mixin transition($props...) {
+  -webkit-transition-property: $props;
+  -o-transition-property: $props;
+  transition-property: $props;
+  -webkit-transition-duration: 250ms;
+  -o-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
