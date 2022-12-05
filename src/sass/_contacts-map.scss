@@ -13,14 +13,17 @@
   background-color: var(--background-section);
   padding-top: 36px;
   padding-bottom: 32px;
+
+  background-image: url(../images/lines-mobile.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   @media screen and (min-width: 1024px) {
     padding-top: 56px;
     padding-bottom: 44px;
 
     background-image: url(../images/three-lines.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
   }
   @media screen and (min-width: 1280px) {
     padding-bottom: 73px;

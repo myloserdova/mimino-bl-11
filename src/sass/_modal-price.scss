@@ -1,0 +1,190 @@
+.close-modal-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+    border: none;
+    cursor: pointer;
+    background-color: var(--background-section);
+
+    &__icon {
+        stroke: var(--close-modal-button-color);
+    }
+}
+
+.modal-price {
+    position: relative;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 60px 15px;
+    background-color: var(--background-section);
+    border: 1px solid var(--border-button-room);
+    border-radius: 2px;
+
+    @media screen and (min-width: 414px) {
+        position: absolute;
+        width: 414px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        width: 712px;
+
+    }
+
+    @media screen and (min-width: 1280px) {
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 0 15px;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: scroll;
+        background-color: var(--backdrop-color);
+        transform: scale(1);
+        z-index: 999;
+
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__title {
+        margin-bottom: 40px;
+        font-family: 'Times New Roman';
+        font-size: 24px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        text-transform: uppercase;
+
+        @media screen and (min-width: 1024px){
+            font-size: 32px;
+        }
+    }
+
+    &__form {
+        @media screen and (min-width: 1024px) {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    &__container {
+        @media screen and (min-width: 1024px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 28px 16px;
+
+            height: 208px;
+
+            margin-left: 43px;
+            margin-right: 43px;
+        }
+    }
+
+    &__wrap {
+        margin-bottom: 20px;
+
+        @media screen and (min-width: 1024px) {
+            margin: 0;
+        }
+
+        &-type {
+            @media screen and (min-width: 1024px) {
+            margin-left: 43px;
+            margin-right: 43px;
+            }
+        }
+    }
+
+
+    &__input {
+        padding: 17px 12px;
+        margin-bottom: 8px;
+
+        width: 100%;
+
+        background-color: var(--background-section);
+        border: 1px solid var(--text-secondary-brown);
+        border-radius: 2px;
+
+
+        font-family: 'Times New Roman';
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: 0.05em;
+        color: var(--close-modal-button-color);
+
+        @media screen and (min-width: 1024px) {
+            width: 288px;
+            font-size: 24px;
+            line-height: 1.1667;
+
+        }
+    }
+
+    &__room-type {
+        display: block;
+        font-family: 'Times New Roman';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.166;
+        letter-spacing: 0.05em;
+        color: var(--input-text-color);
+        margin-bottom: 28px;
+    }
+
+    &__label {
+        display: block;
+
+        color: var(--text-secondary-brown);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.2142;
+        letter-spacing: 0.02em;
+
+    }
+
+    &__control {
+        gap: 16px;
+        justify-content: center;
+
+        @media screen and (min-width: 1024px) {
+            display: flex;
+        }
+    }
+
+    &__submit-button {
+        padding: 20px 41px;
+        margin-top: 20px;
+        min-width: 100%;
+        background-color: var(--black-color-room);
+        border: 1px solid var(--border-button-room);
+        border-radius: 2px;
+        color: var(--main-white);
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        text-transform: uppercase;
+        
+        @media screen and (min-width: 1024px) {
+            font-size: 24px;
+            line-height: 1.2083;
+        }
+        
+        &:hover,
+        &:focus {
+            background-color: var(--border-button-room);
+            border: 1px solid var(--border-button-room);
+            border-radius: 2px;
+            color: var(--black-color-room);
+        }
+    }
+}

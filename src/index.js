@@ -13,3 +13,4 @@ import './js/modal-price';
 import './js/phone-mask';
 import './js/slick-for-restaurant';
 import './js/slick-detail-rest';
+
