@@ -1,12 +1,35 @@
 .menu-restaurant {
+  position: relative;
+
   background-color: var(--section-reverse-background-color);
 
-  //   @media screen and (min-width: 1024px) {
-  //     background-image: url(../images/three-lines.png);
-  //     background-size: cover;
-  //     background-position: center;
-  //     background-repeat: no-repeat;
-  //   }
+  // @media screen and (min-width: 1280px) {
+  //   background-image: url(../images/three-lines.png);
+  //   background-size: cover;
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  // }
+
+  &__lines--top {
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 100%;
+
+      @media screen and (min-width: 1024px) {
+        background: var(--vertical-lines-tablet);
+        width: 468px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        background: var(--vertical-lines-desktop);
+        width: 605px;
+      }
+    }
+  }
 }
 
 .menu-restaurant__container {
