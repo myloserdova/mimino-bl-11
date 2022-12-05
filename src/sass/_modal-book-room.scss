@@ -41,8 +41,6 @@
         top: 0;
         left: 0;
         
-        padding: 0 15px;
-        
         width: 100vw;
         height: 100vh;
         overflow-y: scroll;
@@ -50,22 +48,21 @@
         transform: scale(1);
         z-index: 999;
         
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        @include transition (transform, visibility, opacity);
     }
     
     &__title {
         margin-bottom: 40px;
     
         font-family: 'Times New Roman';
-        font-size: 20px;
+        font-size: 24px;
         letter-spacing: 0.05em;
         text-align: center;
         text-transform: uppercase;
 
         @media screen and (min-width: 1024px) {
-            font-size: 24px;
+            font-size: 40px;
         }
     }
     
@@ -117,12 +114,14 @@
         letter-spacing: 0.05em;
         color: var(--close-modal-button-color);
 
+        @include transition (background-color);
+
         &:hover,
         &:focus {
             outline: none;
             border-color: var(--border-button-room);
-            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             cursor: pointer;
+
         }
 
         @media screen and (max-width: 1023px) {
@@ -194,6 +193,7 @@
         font-size: 20px;
         line-height: 1.2;
         text-transform: uppercase;
+        cursor: pointer;
 
         @media screen and (min-width: 1024px) {
                 font-size: 24px;
