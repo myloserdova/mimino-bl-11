@@ -1,8 +1,13 @@
 .container--contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   @media screen and (min-width: 1024px) {
     padding-left: 47px;
     padding-right: 47px;
-    position: relative;
+    flex-direction: row;
+    gap: 108px;
+    // position: relative;
     @media screen and (min-width: 1280px) {
       padding-left: 85px;
       padding-right: 85px;
@@ -10,20 +15,47 @@
   }
 }
 .contacts-map {
-  background-color: var(--background-section);
+  // background-color: var(--background-section);
   padding-top: 36px;
   padding-bottom: 32px;
+  position: relative;
 
-  background-image: url(../images/lines-mobile.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  // background-image: url(../images/lines-mobile.png);
+  // background-size: cover;
+  // background-position: center;
+  // background-repeat: no-repeat;
+
+  &__container--lines {
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 100%;
+      box-sizing: inherit;
+
+      @media screen and (max-width: 1023px) {
+        background: var(--vertical-lines-mobile);
+        width: 136px;
+      }
+
+      @media screen and (min-width: 1024px) {
+        background: var(--vertical-lines-tablet);
+        width: 468px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        background: var(--vertical-lines-desktop);
+        width: 605px;
+      }
+    }
+  }
 
   @media screen and (min-width: 1024px) {
     padding-top: 56px;
     padding-bottom: 44px;
-
-    background-image: url(../images/three-lines.png);
   }
   @media screen and (min-width: 1280px) {
     padding-bottom: 73px;
@@ -137,14 +169,15 @@
   }
 }
 .map {
-  margin-top: 32px;
+  // margin-top: 32px;
   border: 1px solid #bababa;
   border-radius: 2px;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   @media screen and (min-width: 1024px) {
-    position: absolute;
-    top: -15px;
-    right: 47px;
+    // position: absolute;
+    // top: -15px;
+    // right: 47px;
+    margin-top: 13px;
     width: 535px;
     height: 412px;
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
@@ -152,6 +185,7 @@
   @media screen and (min-width: 1280px) {
     width: 634px;
     height: 414px;
-    right: 85px;
+    // right: 85px;
+    margin-top: 8px;
   }
 }
