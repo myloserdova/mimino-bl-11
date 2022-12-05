@@ -3,11 +3,13 @@
   padding-bottom: 160px;
   background-color: var(--background-section);
 
+  background-image: url(../images/lines-mobile.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   @media screen and (min-width: 1024px) {
     background-image: url(../images/three-lines.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
   }
   .gallery-bedroom-container {
     margin-bottom: 32px;
