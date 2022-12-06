@@ -2,17 +2,18 @@
 .room-amenities {
   padding-top: 32px;
   padding-bottom: 32px;
+  position: relative;
 
-  background: var(--background-section);
+  // background: var(--background-section);
 
   @media screen and (min-width: 1024px) {
     padding-top: 48px;
     padding-bottom: 40px;
 
-    background-image: url(../images/three-lines.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    // background-image: url(../images/three-lines.png);
+    // background-size: cover;
+    // background-position: center;
+    // background-repeat: no-repeat;
   }
 
   @media screen and (min-width: 1280px) {
@@ -26,6 +27,24 @@
 
     @media screen and (min-width: 1280px) {
       padding: 0 85px;
+    }
+  }
+
+  &__container--lines {
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 100%;
+      box-sizing: inherit;
+
+      @media screen and (min-width: 1280px) {
+        background: var(--vertical-lines-desktop);
+        width: 605px;
+      }
     }
   }
 

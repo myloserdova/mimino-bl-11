@@ -17,10 +17,29 @@
   --gallery-logo-color: #828282;
   --backdrop-color: rgba(0, 0, 0, 0.2);
   --close-modal-button-color: #808080;
-  --footer-background-color: #0E0C07;
+  --footer-background-color: #0e0c07;
   --input-text-color: #808080;
-  --section-reverse-background-color: #F0ECD6;
+  --section-reverse-background-color: #f0ecd6;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --vertical-lines-desktop: repeating-linear-gradient(
+    90deg,
+    rgba(186, 186, 186, 0.4) 1px,
+    transparent 2px,
+    transparent 302px
+  );
+  --vertical-lines-tablet: repeating-linear-gradient(
+    90deg,
+    rgba(186, 186, 186, 0.4) 1px,
+    transparent 2px,
+    transparent 234px
+  );
+  --vertical-lines-mobile: repeating-linear-gradient(
+    90deg,
+    rgba(186, 186, 186, 0.4) 1px,
+    transparent 2px,
+    transparent 134px
+  );
 }
 
 @font-face {
@@ -34,7 +53,7 @@
 }
 
 body {
-  background-color: var(--main-bg-color);
+  background-color: var(--background-section);
   color: var(--black-color-text);
 
   font-weight: 400;
@@ -111,7 +130,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-.img-border{
+.img-border {
   border-radius: 2px;
   box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
 }
@@ -130,7 +149,7 @@ img {
     line-height: calc(36.8 / 32);
     padding-top: 0;
     margin-bottom: 4px;
- }
+  }
 }
 
 .section-title {
@@ -148,7 +167,7 @@ img {
     line-height: calc(69 / 64);
     color: var(--second-section-title-color);
     margin-bottom: 24px;
-}
+  }
 }
 
 .text_secondary {
@@ -167,13 +186,13 @@ img {
     line-height: calc(20 / 16);
     max-width: 439px;
     height: 80px;
- }
+  }
 
-@media (min-width: 1280px) {
-  max-width: 518px;
-  height: 60px;
+  @media (min-width: 1280px) {
+    max-width: 518px;
+    height: 60px;
+  }
 }
- }
 
 .text_secondary-color {
   font-weight: 600;
@@ -189,8 +208,8 @@ img {
     font-size: 16px;
     line-height: calc(20 / 16);
     max-width: 312px;
- height: 122px;
- }
+    height: 122px;
+  }
 }
 
 .is-hidden {
@@ -219,7 +238,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@mixin transition ($props...) {
+@mixin transition($props...) {
   -webkit-transition-property: $props;
   -o-transition-property: $props;
   transition-property: $props;

@@ -1,14 +1,39 @@
 .gallery {
-  background-color: var(--background-section);
-  background-image: url(../images/lines-mobile.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  @media screen and (min-width: 1024px) {
-    background-image: url(../images/three-lines.png);
-    margin-bottom: 160px;
+  padding-top: 18px;
+  position: relative;
+  @media screen and (min-width: 1023px) {
+    padding-bottom: 160px;
   }
+  padding-bottom: 160px;
+  &__container--lines {
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 100%;
+      box-sizing: inherit;
+
+      @media screen and (max-width: 1023px) {
+        background: var(--vertical-lines-mobile);
+        width: 136px;
+      }
+
+      @media screen and (min-width: 1024px) {
+        background: var(--vertical-lines-tablet);
+        width: 468px;
+        padding-top: 0;
+      }
+
+      @media screen and (min-width: 1280px) {
+        background: var(--vertical-lines-desktop);
+        width: 605px;
+      }
+    }
+  }
+
   .gallery-bedroom-container {
     margin-bottom: 32px;
     flex-direction: column;
@@ -93,7 +118,7 @@
       }
       @media (min-width: 1280px) {
         left: -73px;
-        top: -50px;
+        top: -40px;
       }
     }
   }
@@ -215,9 +240,12 @@
     border: none;
     position: absolute;
     bottom: -55px;
-    left: 177px;
+    left: 0;
+    @media (min-width: 414px) {
+      left: 177px;
+    }
     @media (min-width: 1024px) {
-      left: 35px;
+      left: 0;
     }
   }
   .next-gallery-hotel {
@@ -231,7 +259,10 @@
     border: none;
     position: absolute;
     bottom: -55px;
-    left: 260px;
+    left: 70px;
+    @media (min-width: 414px) {
+      left: 260px;
+    }
     @media (min-width: 1024px) {
       left: 90px;
     }
