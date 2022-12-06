@@ -1,4 +1,5 @@
 import './js/header-stiky';
+import './js/air-datepicker-start';
 import './js/slick-for-hero';
 import './js/hotel-gallery';
 import './js/slick-img-rooms';

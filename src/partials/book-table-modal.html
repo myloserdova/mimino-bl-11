@@ -13,8 +13,10 @@
           id="user_name"
           type="text"
           name="username"
-          pattern="[A-Za-zА-Яа-я]"
           placeholder="Ваше ім’я"
+          pattern="[A-Za-zА-Яа-я]{3,}"
+          title="Ім'я повинне складатися мінімум з трьох букв"
+          autocomplete="off"
         />
         <label class="booking-table__label" for="user_name"
           >На кого забронювати столик?</label
@@ -50,10 +52,11 @@
         >
         <div class="booking-table__select-container">
           <input
-            class="booking-table__input"
-            type="date"
+            class="booking-table__input booking-table__input--date-input"
+            type="text"
             min="1920-01-01"
             id="booking-table-date"
+            required
           />
         </div>
         <label
