@@ -1,6 +1,10 @@
 .gallery {
-  border-top: 1px solid var(--black-color-room);
+  padding-top: 18px;
   position: relative;
+  @media screen and (min-width: 1023px) {
+    padding-bottom: 160px;
+  }
+  padding-bottom: 160px;
   &__container--lines {
     &::before {
       content: '';
@@ -20,6 +24,7 @@
       @media screen and (min-width: 1024px) {
         background: var(--vertical-lines-tablet);
         width: 468px;
+        padding-top: 0;
       }
 
       @media screen and (min-width: 1280px) {
@@ -113,7 +118,7 @@
       }
       @media (min-width: 1280px) {
         left: -73px;
-        top: -50px;
+        top: -40px;
       }
     }
   }
@@ -235,9 +240,12 @@
     border: none;
     position: absolute;
     bottom: -55px;
-    left: 177px;
+    left: 0;
+    @media (min-width: 414px) {
+      left: 177px;
+    }
     @media (min-width: 1024px) {
-      left: 35px;
+      left: 0;
     }
   }
   .next-gallery-hotel {
@@ -251,7 +259,10 @@
     border: none;
     position: absolute;
     bottom: -55px;
-    left: 260px;
+    left: 70px;
+    @media (min-width: 414px) {
+      left: 260px;
+    }
     @media (min-width: 1024px) {
       left: 90px;
     }
