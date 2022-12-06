@@ -1,18 +1,6 @@
 .gallery {
   border-top: 1px solid var(--black-color-room);
-  padding-bottom: 160px;
   position: relative;
-  // background-color: var(--background-section);
-
-  // background-image: url(../images/lines-mobile.png);
-  // background-size: cover;
-  // background-position: center;
-  // background-repeat: no-repeat;
-
-  // @media screen and (min-width: 1024px) {
-  //   background-image: url(../images/three-lines.png);
-  // }
-
   &__container--lines {
     &::before {
       content: '';
