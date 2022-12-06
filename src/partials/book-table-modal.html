@@ -10,10 +10,11 @@
       <div class="booking-table__item">
         <input
           class="booking-table__input"
-          id="user_name"
           type="text"
           name="username"
+          id="user_name"
           placeholder="Ваше ім’я"
+          required
           pattern="[A-Za-zА-Яа-я]{3,}"
           title="Ім'я повинне складатися мінімум з трьох букв"
           autocomplete="off"
@@ -21,13 +22,14 @@
         <label class="booking-table__label" for="user_name"
           >На кого забронювати столик?</label
         >
-        <input 
-        class="tel-input booking-table__input" 
-        type="tel" 
-        name="usertel" 
-        id="user_tel" 
-        required 
-        autocomplete="off" />
+        <input
+          class="tel-input booking-table__input"
+          type="tel"
+          name="usertel"
+          id="user_tel"
+          required
+          autocomplete="off"
+        />
         <label class="booking-table__label" for="user_tel"
           >Номер телефону</label
         >
@@ -52,21 +54,21 @@
           <input
             class="booking-table__input booking-table__input--date-input"
             type="text"
-            min="1920-01-01"
             id="booking-table-date"
             required
+            autocomplete="off"
+            placeholder="Сьогодні"
+            pattern="(0[1-9]|[12][0-9]|3[01])[- ..](0[1-9]|1[012])[- ..](19|20)\d\d"
           />
         </div>
-        <label
-          class="booking-table__label"
-          for="booking-table-date"
+        <label class="booking-table__label" for="booking-table-date"
           >На яку дату бронювати?</label
         >
       </div>
+      <button type="submit" class="modal__book-button">
+        ОФОРМИТИ БРОНЮВАННЯ
+      </button>
     </form>
-    <button type="submit" class="modal__book-button">
-      ОФОРМИТИ БРОНЮВАННЯ
-    </button>
   </div>
 </div>
 <script
