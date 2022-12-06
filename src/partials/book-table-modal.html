@@ -21,15 +21,13 @@
         <label class="booking-table__label" for="user_name"
           >На кого забронювати столик?</label
         >
-        <input
-          class="tel-input booking-table__input"
-          id="user_tel"
-          type="tel"
-          name="tel"
-          value="+38 (___) ___ - __ - __"
-          mask="+38 (999) 999 - 99 - 99"
-          placeholder="+38 (___) ___ - __ - __"
-        />
+        <input 
+        class="tel-input booking-table__input" 
+        type="tel" 
+        name="usertel" 
+        id="user_tel" 
+        required 
+        autocomplete="off" />
         <label class="booking-table__label" for="user_tel"
           >Номер телефону</label
         >
@@ -62,7 +60,6 @@
         <label
           class="booking-table__label"
           for="booking-table-date"
-          name="booking-table-date"
           >На яку дату бронювати?</label
         >
       </div>

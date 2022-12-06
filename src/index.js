@@ -11,7 +11,7 @@ import './js/modal';
 import './js/select-choice';
 import './js/book-table-modal';
 import './js/slick-detail-rest';
-import './js/modal-price';
 import './js/phone-mask';
+import './js/modal-price';
 import './js/slick-for-restaurant';
 
