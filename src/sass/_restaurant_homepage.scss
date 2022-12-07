@@ -150,7 +150,7 @@
 .homepage-restaurant .my-slick-prev-rest {
   left: 0;
   bottom: -48px;
-  background-image: url(../images/cil_arrow-left-hotel-white.svg);
+  background-image: url('../images/cil_arrow-left-hotel-white.svg');
 
   @media screen and (min-width: 1024px) {
     top: 286px;
@@ -160,7 +160,7 @@
 .homepage-restaurant .my-slick-next-rest {
   left: 64px;
   bottom: -48px;
-  background-image: url(../images/cil_arrow-right-hotel-white.svg);
+  background-image: url('../images/cil_arrow-right-hotel-white.svg');
   @media screen and (min-width: 1024px) {
     top: 286px;
   }
@@ -172,7 +172,7 @@
 }
 
 .my-slick-prev-restaurant {
-  background-image: url(../images/cil_arrow-left-hotel.svg);
+  background-image: url('../images/cil_arrow-left-hotel-white.svg');
 
   width: 32px;
   height: 32px;
@@ -186,7 +186,7 @@
 }
 
 .my-slick-next-restaurant {
-  background-image: url(../images/cil_arrow-right-hotel.svg);
+  background-image: url('../images/cil_arrow-right-hotel-white.svg');
   width: 32px;
   height: 32px;
   border: none;
@@ -196,6 +196,22 @@
 
   bottom: -40px;
   right: 30px;
+}
+
+.my-slick-prev-restaurant:hover,
+.my-slick-prev-restaurant:focus {
+  background-image: url(../images/rest-home/arr-left-yell.svg);
+  width: 32px;
+  height: 32px;
+  z-index: 3;
+}
+
+ .my-slick-next-restaurant:hover,
+.my-slick-next-restaurant:focus {
+  background-image: url(../images/rest-home/arr-right-yell.svg);
+  width: 32px;
+  height: 32px;
+  z-index: 3;
 }
 
 .rest-btn {
