@@ -60,6 +60,8 @@
 
 .rest-home__img--bg {
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 }
 
@@ -153,7 +155,7 @@
   background-color: #0000;
   border: none;
   padding: 0;
-  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
   bottom: 20px;
 
@@ -165,16 +167,6 @@
     top: 280px;
   }
 }
-
-.my-slick-prev-rest:hover,
-.my-slick-prev-rest:focus {
-  fill: var(--border-button-room);
- }
-
- .my-slick-next-rest:hover,
-.my-slick-next-rest:focus {
-  fill: var(--border-button-room);
-  }
 
 .my-slick-prev-rest {
   background-image: url(../images/rest-home/cil_arrow-left.svg);
@@ -203,3 +195,20 @@
     left: 510px;
   }
 }
+
+.my-slick-prev-rest:hover,
+.my-slick-prev-rest:focus {
+  background-image: url(../images/rest-home/arr-left-yell.svg);
+  width: 32px;
+  height: 32px;
+  z-index: 3;
+}
+
+ .my-slick-next-rest:hover,
+.my-slick-next-rest:focus {
+  background-image: url(../images/rest-home/arr-right-yell.svg);
+  width: 32px;
+  height: 32px;
+  z-index: 3;
+}
+

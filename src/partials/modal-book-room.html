@@ -53,16 +53,15 @@
         <div class="modal-book-room__wrap">
           <label
             class="modal-book-room__label modal-book-room__label--date-label"
-            for="date-in"
             ><div class="modal-book-room__date-input-wrap">
               <input
                 class="modal-book-room__input modal-book-room__input--date-input"
                 type="text"
                 name="date-in"
-                id="date-in"
                 required
                 autocomplete="off"
                 placeholder="Сьогодні"
+                pattern="(0[1-9]|[12][0-9]|3[01])[- ..](0[1-9]|1[012])[- ..](19|20)\d\d"
               />
               <svg
                 class="modal-book-room__date-input-icon"
@@ -79,16 +78,15 @@
         <div class="modal-book-room__wrap">
           <label
             class="modal-book-room__label modal-book-room__label--date-label"
-            for="date-out"
             ><div class="modal-book-room__date-input-wrap">
               <input
                 class="modal-book-room__input modal-book-room__input--date-input2"
                 type="text"
                 name="date-in"
-                id="date-in"
                 required
                 autocomplete="off"
                 placeholder="Сьогодні"
+                pattern="(0[1-9]|[12][0-9]|3[01])[- ..](0[1-9]|1[012])[- ..](19|20)\d\d"
               />
               <span class="modal-book-room__date-input-overlay"
                 ><svg
