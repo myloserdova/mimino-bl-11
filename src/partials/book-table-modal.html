@@ -5,7 +5,7 @@
         <use href="./images/symbol-defs.svg#icon-cross"></use>
       </svg>
     </button>
-    <h2 class="modal__book-title">ЗАБРОНЮВАТИ СТОЛИК</h2>
+    <h2 class="modal__book-title">Забронювати столик</h2>
     <form name="booking-table_form" class="booking-table__form">
       <div class="booking-table__item">
         <input
@@ -60,13 +60,17 @@
             placeholder="Сьогодні"
             pattern="(0[1-9]|[12][0-9]|3[01])[- ..](0[1-9]|1[012])[- ..](19|20)\d\d"
           />
+          <span class="modal-book-room__date-input-overlay"><svg class="modal-book-room__date-input-icon" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-modal-arrow"></use>
+            </svg>
+          </span>
         </div>
         <label class="booking-table__label" for="booking-table-date"
           >На яку дату бронювати?</label
         >
       </div>
       <button type="submit" class="modal__book-button">
-        ОФОРМИТИ БРОНЮВАННЯ
+        Оформити бронювання
       </button>
     </form>
   </div>

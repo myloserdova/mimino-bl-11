@@ -248,6 +248,7 @@
   background-image: url('../images/cil_arrow-left-hotel-white.svg');
   z-index: 3;
   right: 68px;
+  transition: background-image .25s cubic-bezier(.4, 0, .2, 1);
 
   @media (min-width: 1024px) {
     right: 65px;
@@ -258,6 +259,7 @@
   background-image: url('../images/cil_arrow-right-hotel-white.svg');
   z-index: 3;
   right: 8px;
+  transition: background-image .25s cubic-bezier(.4, 0, .2, 1);
 
   @media (min-width: 1024px) {
     right: 0;
