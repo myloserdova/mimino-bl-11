@@ -266,8 +266,24 @@
     @media (min-width: 1024px) {
       left: 90px;
     }
-    
-  }
+     }
+
+.prev-gallery-hotel:hover,
+.prev-gallery-hotel:focus {
+  background-image: url(../images/rest-home/arr-left-yell.svg);
+  width: 32px;
+  height: 32px;
+  z-index: 3;
+}
+
+ .next-gallery-hotel:hover,
+.next-gallery-hotel:focus {
+  background-image: url(../images/rest-home/arr-right-yell.svg);
+  width: 32px;
+  height: 32px;
+  z-index: 3;
+}
+
   .img__hotel-gallery-hp {
     width: 244px;
     border-radius: 2px;

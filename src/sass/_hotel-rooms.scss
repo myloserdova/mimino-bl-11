@@ -412,6 +412,7 @@
   background-size: cover;
   background-color: #0000;
   cursor: pointer;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 1024px) {
     top: 234px;
     left: 334px;
@@ -433,6 +434,7 @@
   background-size: cover;
   background-color: #0000;
   cursor: pointer;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 1024px) {
     top: 234px;
     right: 0;
@@ -441,6 +443,23 @@
     top: 295px;
   }
 }
+
+.my-slick-prev-hotel:hover,
+.my-slick-prev-hotel:focus {
+  background-image: url(../images/rest-home/arr-left-yell.svg);
+  width: 32px;
+  height: 32px;
+  z-index: 3;
+}
+
+ .my-slick-next-hotel:hover,
+.my-slick-next-hotel:focus {
+  background-image: url(../images/rest-home/arr-right-yell.svg);
+  width: 32px;
+  height: 32px;
+  z-index: 3;
+}
+
 .my-slick-prev-hotel-reverse {
   position: absolute;
   width: 32px;
@@ -453,6 +472,7 @@
   background-size: cover;
   background-color: #0000;
   cursor: pointer;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 1024px) {
     top: 234px;
     left: 0;
@@ -476,6 +496,7 @@
   background-size: cover;
   background-color: #0000;
   cursor: pointer;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 1024px) {
     top: 234px;
     right: 334px;
@@ -485,4 +506,20 @@
     top: 295px;
     right: 459px;
   }
+}
+
+.my-slick-prev-hotel-reverse:hover,
+.my-slick-prev-hotel-reverse:focus {
+  background-image: url(../images/rest-home/arr-left-yell.svg);
+  width: 32px;
+  height: 32px;
+  z-index: 3;
+}
+
+ .my-slick-next-hotel-reverse:hover,
+.my-slick-next-hotel-reverse:focus {
+  background-image: url(../images/rest-home/arr-right-yell.svg);
+  width: 32px;
+  height: 32px;
+  z-index: 3;
 }
