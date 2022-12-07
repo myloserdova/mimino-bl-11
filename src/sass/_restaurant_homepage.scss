@@ -5,7 +5,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 24px 40px 24px 0;
+  padding: 24px 0 40px 40px;
   position: relative;
 
   // max-width: 1280px;
@@ -130,6 +130,7 @@
 
 .rest-slider {
   display: flex;
+  justify-content: flex-end;
 
   @media screen and (min-width: 1024px) {
     min-width: 428px;
@@ -242,6 +243,8 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  align-items: center;
+  margin-left: -40px;
 }
 
 .homepage-restauran__button {
