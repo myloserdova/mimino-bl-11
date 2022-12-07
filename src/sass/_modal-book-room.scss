@@ -46,7 +46,7 @@
         overflow-y: scroll;
         background-color: var(--backdrop-color);
         transform: scale(1);
-        z-index: 999;
+        z-index: 998;
         
     
         @include transition (transform, visibility, opacity);
@@ -158,25 +158,29 @@
         }
     }
 
+    &__label--date-label {
+        margin-left: 0px;
+    }
+
     &__date-input-wrap {
         position: relative;
     }
 
-    &__date-input-overlay {
-        position: absolute;
-        top: 20px;
-        right: 10px;
 
-        width: 30px;
-        height: 30px;
-        background-color: var(--background-section);
-    }
 
     &__date-input-icon {
         position: absolute;
-        right: 10px;
+        top: 15px;
+        right: 15px;
         
-        
+    @media screen and (min-width: 1024px) {
+            top: 20px;
+            right: 20px;
+        }
+    }
+
+    &__label--date-text {
+        margin-left: 12px;
     }
     
     &__submit-button {
