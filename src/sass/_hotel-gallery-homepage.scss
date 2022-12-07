@@ -4,8 +4,6 @@
   @media screen and (min-width: 1023px) {
     padding-bottom: 160px;
   }
-  padding-bottom: 160px;
-
   &__container--lines {
     &::before {
       content: '';
@@ -170,7 +168,8 @@
         }
         .img__lobby-mobile-size {
           width: 200px;
-          @media (min-width: 1024px) {
+
+@media (min-width: 1024px) {
             width: 350px;
           }
           @media (min-width: 1280px) {
@@ -261,13 +260,12 @@
     border: none;
     position: absolute;
     bottom: -55px;
-    left: 70px;
-    transition: background-image .25s cubic-bezier(.4, 0, .2, 1);
+    left: 62px;
     @media (min-width: 414px) {
       left: 260px;
     }
     @media (min-width: 1024px) {
-      left: 90px;
+      left: 62px;
     }
   }
 
