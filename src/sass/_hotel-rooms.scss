@@ -412,7 +412,7 @@
   background-size: cover;
   background-color: #0000;
   cursor: pointer;
-  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-image .25s cubic-bezier(.4, 0, .2, 1);
   @media screen and (min-width: 1024px) {
     top: 234px;
     left: 334px;
@@ -434,7 +434,7 @@
   background-size: cover;
   background-color: #0000;
   cursor: pointer;
-  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-image .25s cubic-bezier(.4, 0, .2, 1);
   @media screen and (min-width: 1024px) {
     top: 234px;
     right: 0;
@@ -472,7 +472,7 @@
   background-size: cover;
   background-color: #0000;
   cursor: pointer;
-  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-image .25s cubic-bezier(.4, 0, .2, 1);
   @media screen and (min-width: 1024px) {
     top: 234px;
     left: 0;
@@ -496,7 +496,7 @@
   background-size: cover;
   background-color: #0000;
   cursor: pointer;
-  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-image .25s cubic-bezier(.4, 0, .2, 1);
   @media screen and (min-width: 1024px) {
     top: 234px;
     right: 334px;
