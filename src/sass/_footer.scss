@@ -1,27 +1,32 @@
 .footer {
   background-color: var(--footer-background-color);
-
-  padding: 40px 30px 40px 59px;
-
-  @media screen and (min-width: 1024px) {
-    padding: 80px 123px 80px 154px;
-  }
-  @media screen and (min-width: 1280px) {
-    padding: 80px 186px 80px 216px;
-  }
 }
 
 .footer__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 40px 30px 40px 59px;
+
+  @media screen and (max-width: 413px) {
+    width: auto;
+  }
+
+  @media screen and (min-width: 414px) and (max-width: 1023px) {
+    width: 414px;
+  }
 
   @media screen and (min-width: 1024px) {
-
+    max-width: 1024px;
+    padding: 80px 123px 80px 154px;
   }
 
   @media screen and (min-width: 1280px) {
-
+    max-width: 1280px;
+    padding: 80px 186px 80px 216px;
   }
 }
 
