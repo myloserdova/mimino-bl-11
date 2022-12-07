@@ -155,6 +155,7 @@
 
 .rest-slider {
   display: flex;
+  justify-content: flex-end;
 
   @media screen and (min-width: 1024px) {
     min-width: 428px;
