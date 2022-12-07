@@ -241,6 +241,7 @@
     position: absolute;
     bottom: -55px;
     left: 0;
+    transition: background-image .25s cubic-bezier(.4, 0, .2, 1);
     @media (min-width: 414px) {
       left: 177px;
     }
@@ -260,6 +261,7 @@
     position: absolute;
     bottom: -55px;
     left: 70px;
+    transition: background-image .25s cubic-bezier(.4, 0, .2, 1);
     @media (min-width: 414px) {
       left: 260px;
     }

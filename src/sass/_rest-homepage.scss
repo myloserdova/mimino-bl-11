@@ -172,7 +172,7 @@
   background-image: url(../images/rest-home/cil_arrow-left.svg);
   z-index: 3;
   right: 68px;
-
+  transition: background-image .25s cubic-bezier(.4, 0, .2, 1);
   @media (min-width: 1024px) {
     left: 330px;
   }
@@ -186,7 +186,7 @@
   background-image: url(../images/rest-home/cil_arrow-right.svg);
   z-index: 3;
   right: 8px;
-
+  transition: background-image .25s cubic-bezier(.4, 0, .2, 1);
   @media (min-width: 1024px) {
     left: 390px;
   }
