@@ -3,13 +3,6 @@
 
   background-color: var(--section-reverse-background-color);
 
-  // @media screen and (min-width: 1280px) {
-  //   background-image: url(../images/three-lines.png);
-  //   background-size: cover;
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  // }
-
   &__lines--top {
     &:before {
       content: '';
