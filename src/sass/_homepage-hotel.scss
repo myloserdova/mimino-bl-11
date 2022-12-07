@@ -72,12 +72,6 @@
 
   &__wrap {
     background-color: #fffdee;
-    @media screen and (min-width: 1024px) {
-      background-image: url(../images/three-lines.png);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
   }
 
   &__logo {
@@ -278,7 +272,7 @@
   z-index: 3;
 }
 
- .slick-next-rest-detail_s:hover,
+.slick-next-rest-detail_s:hover,
 .slick-next-rest-detail_s:focus {
   background-image: url(../images/rest-home/arr-right-yell.svg);
   width: 32px;

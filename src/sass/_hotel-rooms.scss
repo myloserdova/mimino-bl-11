@@ -1,13 +1,5 @@
 .hotel-rooms {
   position: relative;
-  // background-color: var(--background-section);
-
-  // @media screen and (min-width: 1024px) {
-  //   background-image: url(../images/three-lines.png);
-  //   background-size: cover;
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  // }
 
   &__container--lines {
     &::before {
@@ -34,12 +26,26 @@
 }
 .hotel-rooms--reverse {
   background-color: var(--section-reverse-background-color);
+  position: relative;
+}
+.hotel-rooms__lines--top {
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
 
-  @media screen and (min-width: 1024px) {
-    background-image: url(../images/three-lines.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    @media screen and (min-width: 1024px) {
+      background: var(--vertical-lines-tablet);
+      width: 468px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      background: var(--vertical-lines-desktop);
+      width: 605px;
+    }
   }
 }
 
@@ -452,7 +458,7 @@
   z-index: 3;
 }
 
- .my-slick-next-hotel:hover,
+.my-slick-next-hotel:hover,
 .my-slick-next-hotel:focus {
   background-image: url(../images/rest-home/arr-right-yell.svg);
   width: 32px;
@@ -516,7 +522,7 @@
   z-index: 3;
 }
 
- .my-slick-next-hotel-reverse:hover,
+.my-slick-next-hotel-reverse:hover,
 .my-slick-next-hotel-reverse:focus {
   background-image: url(../images/rest-home/arr-right-yell.svg);
   width: 32px;
